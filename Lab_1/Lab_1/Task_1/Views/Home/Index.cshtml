@@ -1,0 +1,122 @@
+﻿@{
+    // Заголовок сторінки
+    ViewData["Title"] = "Головна (Index)";
+}
+
+<!-- Заголовок форми -->
+<h2 class="mb-4">Форма (нетипізована) для введення параметрів абзаців</h2>
+
+<!-- Форма для введення параметрів (POST-запит до HomeController, метод IndexPost) -->
+<form method="post" asp-action="IndexPost" asp-controller="Home">
+    <div class="row">
+        <!-- Параграф 1 -->
+        <div class="col-md-4">
+            <h4>Параграф 1</h4>
+            <!-- Поле введення тексту -->
+            <div class="mb-3">
+                <label class="form-label">Текст:</label>
+                <input type="text" name="paragraph1Text" value="FORM" class="form-control" />
+            </div>
+            <!-- Поле введення кольору тексту -->
+            <div class="mb-3">
+                <label class="form-label">Колір тексту (color):</label>
+                <input type="text" name="paragraph1Color" placeholder="red, #FF0000" class="form-control" />
+            </div>
+            <!-- Випадаючий список вирівнювання тексту -->
+            <div class="mb-3">
+                <label class="form-label">Вирівнювання (text-align):</label>
+                <select name="paragraph1Align" class="form-select">
+                    <option value="left">left</option>
+                    <option value="center">center</option>
+                    <option value="right">right</option>
+                    <option value="justify">justify</option>
+                </select>
+            </div>
+            <!-- Поле введення кольору фону -->
+            <div class="mb-3">
+                <label class="form-label">Фон (колір) background-color:</label>
+                <input type="text" name="paragraph1BgColor" placeholder="white / #FFFFFF / ..." class="form-control" />
+            </div>
+            <!-- Поле введення URL фонового зображення -->
+            <div class="mb-3">
+                <label class="form-label">Фон (зображення) background-image (URL):</label>
+                <input type="text" name="paragraph1BgImage" placeholder="https://..." class="form-control" />
+            </div>
+        </div>
+
+        <!-- Параграф 2 -->
+        <div class="col-md-4">
+            <h4>Параграф 2</h4>
+            <!-- Поле введення тексту -->
+            <div class="mb-3">
+                <label class="form-label">Текст:</label>
+                <input type="text" name="paragraph2Text" value="FORM" class="form-control" />
+            </div>
+            <!-- Поле введення кольору тексту -->
+            <div class="mb-3">
+                <label class="form-label">Колір тексту:</label>
+                <input type="text" name="paragraph2Color" placeholder="red, #FF0000" class="form-control" />
+            </div>
+            <!-- Випадаючий список вирівнювання -->
+            <div class="mb-3">
+                <label class="form-label">Вирівнювання:</label>
+                <select name="paragraph2Align" class="form-select">
+                    <option value="left">left</option>
+                    <option value="center">center</option>
+                    <option value="right">right</option>
+                    <option value="justify">justify</option>
+                </select>
+            </div>
+            <!-- Поле введення кольору фону -->
+            <div class="mb-3">
+                <label class="form-label">Фон (колір):</label>
+                <input type="text" name="paragraph2BgColor" placeholder="white" class="form-control" />
+            </div>
+            <!-- Поле введення URL фонового зображення -->
+            <div class="mb-3">
+                <label class="form-label">Фон (зображення) (URL):</label>
+                <input type="text" name="paragraph2BgImage" placeholder="https://..." class="form-control" />
+            </div>
+        </div>
+
+        <!-- Параграф 3 -->
+        <div class="col-md-4">
+            <h4>Параграф 3</h4>
+            <!-- Поле введення тексту -->
+            <div class="mb-3">
+                <label class="form-label">Текст:</label>
+                <input type="text" name="paragraph3Text" value="FORM" class="form-control" />
+            </div>
+            <!-- Поле введення кольору тексту -->
+            <div class="mb-3">
+                <label class="form-label">Колір тексту:</label>
+                <input type="text" name="paragraph3Color" placeholder="red, #FF0000" class="form-control" />
+            </div>
+            <!-- Випадаючий список вирівнювання -->
+            <div class="mb-3">
+                <label class="form-label">Вирівнювання:</label>
+                <select name="paragraph3Align" class="form-select">
+                    <option value="left">left</option>
+                    <option value="center">center</option>
+                    <option value="right">right</option>
+                    <option value="justify">justify</option>
+                </select>
+            </div>
+            <!-- Поле введення кольору фону -->
+            <div class="mb-3">
+                <label class="form-label">Фон (колір):</label>
+                <input type="text" name="paragraph3BgColor" placeholder="white" class="form-control" />
+            </div>
+            <!-- Поле введення URL фонового зображення -->
+            <div class="mb-3">
+                <label class="form-label">Фон (зображення) (URL):</label>
+                <input type="text" name="paragraph3BgImage" placeholder="https://..." class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Горизонтальна лінія для розділення -->
+    <hr />
+    <!-- Кнопка відправки форми -->
+    <button type="submit" class="btn btn-primary">Надіслати</button>
+</form>

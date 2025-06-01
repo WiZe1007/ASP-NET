@@ -1,0 +1,26 @@
+/* Фон для всієї сторінки */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("https://c.wallhere.com/photos/5d/9a/landscape_nature-285967.jpg!d") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 20px; 
+}
+
+/* Стилізація таблиці */
+.custom-table {
+    background-color: rgba(255, 255, 255, 0.85); 
+}
+
+/* Забезпечуємо, що футер завжди залишається внизу */
+html, body {
+    height: 100%; 
+}
+
+.flex-fill {
+    flex: 1 1 auto; 
+}

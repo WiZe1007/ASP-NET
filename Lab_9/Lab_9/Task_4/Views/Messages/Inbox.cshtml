@@ -1,0 +1,24 @@
+﻿@model List<Task_4.Models.Message>
+@{
+    ViewData["Title"] = "Inbox";
+}
+<div class="form-card animate__animated animate__fadeIn">
+    <h2>Вхідні повідомлення</h2>
+    @if (!Model.Any())
+    {
+        <p>У вас немає нових повідомлень.</p>
+    }
+    else
+    {
+        <ul class="list-group">
+            @foreach (var m in Model)
+            {
+                <li class="list-group-item">
+                    <a asp-action="Details" asp-route-id="@m.Id">
+                        <strong>@m.SentAt.ToString("g")</strong> від <strong>@m.From</strong> — @m.Theme
+                    </a>
+                </li>
+            }
+        </ul>
+    }
+</div>

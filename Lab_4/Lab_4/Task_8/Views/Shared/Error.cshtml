@@ -1,0 +1,14 @@
+﻿@model Task_8.Models.ErrorViewModel
+
+@{
+    ViewData["Title"] = "Error";
+}
+
+<div class="container">
+    <h1 class="text-danger">Помилка</h1>
+    <p>Виникла помилка при обробці запиту.</p>
+    @if (Model.ShowRequestId)
+    {
+        <p><strong>Request ID:</strong> @Model.RequestId</p>
+    }
+</div>

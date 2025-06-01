@@ -1,0 +1,30 @@
+﻿@model List<Task_6.Models.User>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "User Scores";
+}
+<div class="form-card animate__animated animate__fadeIn">
+    <h2>User Scores</h2>
+    <div class="mb-3">
+        <a asp-controller="Account" asp-action="Profile" class="btn btn-outline-secondary">
+            ← Back to Profile
+        </a>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var u in Model)
+            {
+                <tr>
+                    <td>@u.Name</td>
+                    <td>@u.Score</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

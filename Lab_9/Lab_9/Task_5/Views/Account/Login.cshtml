@@ -1,0 +1,33 @@
+﻿@model Task_5.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+<div class="form-card animate__animated animate__fadeIn">
+  <h2>Login</h2>
+  <form asp-action="Login" method="post" novalidate>
+    <div class="form-material mb-4">
+      <span asp-validation-for="Name" class="error-message"></span>
+      <label asp-for="Name">Name</label>
+      <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-material mb-4">
+      <span asp-validation-for="Password" class="error-message"></span>
+      <label asp-for="Password">Password</label>
+      <input asp-for="Password" type="password" class="form-control" />
+    </div>
+    <span asp-validation-summary="ModelOnly" class="text-danger mb-3 d-block"></span>
+    <button type="submit" class="btn-register">LOGIN</button>
+  </form>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+      <script>
+        $(function(){
+          var f=$('form');
+          f.removeData('validator').removeData('unobtrusiveValidation');
+          $.validator.setDefaults({ showErrors(eMap,eList){ this.defaultShowErrors(); $('.error-message').each(function(){ var txt=$(this).text().trim(); if(txt)$(this).html(txt.split(' ').join('<br/>')); }); }});
+          $.validator.unobtrusive.parse(f);
+        });
+      </script>
+}

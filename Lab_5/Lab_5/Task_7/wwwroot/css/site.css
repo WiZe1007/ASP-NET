@@ -1,0 +1,65 @@
+/* Загальні стилі для повноекранного відображення */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Організація розташування елементів за допомогою flexbox */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Основний контейнер займає весь доступний простір */
+main {
+    flex: 1 0 auto;
+}
+
+/* Футер завжди залишається внизу */
+footer {
+    flex-shrink: 0;
+}
+
+/* Фонові зображення для різних сторінок */
+body.bg1 {
+    /* Фон для сторінки введення пароля */
+    background: url('https://wallpapercave.com/wp/wp3819690.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.bg2 {
+    /* Фон для сторінки введення Email */
+    background: url('https://s1.1zoom.me/b5050/330/USA_Mountains_Forests_469872_1920x1080.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.bgResult {
+    /* Фон для сторінки результату пошуку */
+    background: url('https://www.hdwallpapers.in/download/granite_boulders_joshua_tree_national_park_california_usa-1920x1080.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Стилізація блоку форми: прозорий фон із заокругленими кутами і тінню */
+.form-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-out;
+    margin-top: 30px;
+}
+
+/* Анімація появи форми */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

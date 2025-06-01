@@ -1,0 +1,161 @@
+﻿@{
+    Layout = "_Layout"; // Використовуємо спільний Layout
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Завдання 2 (Варіант 12) — Абсолютне позиціонування</title>
+    <style>
+        /* Контейнер форми – відносне позиціонування для внутрішніх елементів */
+        .form-container {
+            position: relative;
+            width: 600px; /* Фіксована ширина */
+            height: 400px; /* Фіксована висота */
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8); /* Легкий фон для контрасту */
+        }
+
+        /* Заголовки та мітки для полів форми */
+        .labelName, .labelPhone, .labelEmail, .labelBirthdate {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .labelName {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        .labelPhone {
+            position: absolute;
+            left: 20px;
+            top: 50px;
+        }
+
+        .labelEmail {
+            position: absolute;
+            left: 50px;
+            top: 80px;
+        }
+
+        .labelBirthdate {
+            position: absolute;
+            left: 60px;
+            top: 110px;
+        }
+
+        /* Стилі для кнопок із анімацією */
+        .buttonSubmit, .buttonReset {
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            padding: 8px 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .buttonSubmit {
+            position: absolute;
+            left: 180px;
+            top: 20px;
+            background-color: #007bff; /* Синій фон */
+        }
+
+            .buttonSubmit:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+
+        .buttonReset {
+            position: absolute;
+            left: 260px;
+            top: 190px;
+            background: linear-gradient(45deg, #dc3545, #e4606d);
+        }
+
+            .buttonReset:hover {
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+
+        /* Стилі для полів введення даних */
+        .inputName, .inputPhone, .inputEmail, .inputBirthdate {
+            position: absolute;
+            width: 200px;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .inputName {
+            left: 305px;
+            top: 20px;
+        }
+
+        .inputPhone {
+            left: 310px;
+            top: 60px;
+        }
+
+        .inputEmail {
+            left: 315px;
+            top: 100px;
+        }
+
+        .inputBirthdate {
+            left: 315px;
+            top: 140px;
+        }
+
+            /* Ефект при фокусі на полях введення */
+            .inputName:focus, .inputPhone:focus, .inputEmail:focus, .inputBirthdate:focus {
+                border-color: #007bff;
+                transform: scale(1.02);
+            }
+    </style>
+</head>
+<body>
+    <!-- Форма для вводу даних -->
+    <form method="post" asp-action="Index" asp-controller="Home" class="form-container">
+        <div class="labelName">Ім’я</div>
+        <button type="submit" name="action" value="submit" class="buttonSubmit">
+            Відіслати
+        </button>
+        <input type="text" name="Name" value="@ViewBag.Name" class="inputName" />
+
+        <div class="labelPhone">Телефон</div>
+        <input type="text" name="Phone" value="@ViewBag.Phone" class="inputPhone" />
+
+        <div class="labelEmail">Поштова скринька</div>
+        <input type="text" name="Email" value="@ViewBag.Email" class="inputEmail" />
+
+        <div class="labelBirthdate">Дата народження</div>
+        <input type="date" name="Birthdate" value="@ViewBag.Birthdate" class="inputBirthdate" />
+
+        <button type="submit" name="action" value="reset" class="buttonReset">
+            Скинути
+        </button>
+    </form>
+
+    <!-- Вивід даних, якщо вони введені -->
+    @if (!string.IsNullOrEmpty(ViewBag.Name)
+    || !string.IsNullOrEmpty(ViewBag.Phone)
+    || !string.IsNullOrEmpty(ViewBag.Email)
+    || !string.IsNullOrEmpty(ViewBag.Birthdate))
+    {
+        <hr />
+        <h3>Введені дані:</h3>
+        <p>Ім’я: @ViewBag.Name</p>
+        <p>Телефон: @ViewBag.Phone</p>
+        <p>Поштова скринька: @ViewBag.Email</p>
+        <p>Дата народження: @ViewBag.Birthdate</p>
+    }
+</body>
+</html>

@@ -1,0 +1,77 @@
+﻿@model Task_4.Models.Transport
+
+@{
+    ViewData["Title"] = "Форма транспорту";
+    var transports = ViewBag.Transports as List<Task_4.Models.Transport>; // Отримуємо список записів
+}
+
+<h1>Форма введення даних про транспорт</h1>
+
+<!-- Форма для додавання запису -->
+<form asp-action="Index" method="post">
+    <div class="mb-3">
+        <label asp-for="TransportType" class="form-label">Вид транспорту (Tr, Tl, A)</label>
+        <input asp-for="TransportType" class="form-control" placeholder="Введіть вид транспорту" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="RouteNumber" class="form-label">Номер маршруту</label>
+        <input asp-for="RouteNumber" class="form-control" placeholder="Введіть номер маршруту" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="RouteDistance" class="form-label">Протяжність маршруту (км)</label>
+        <input asp-for="RouteDistance" class="form-control" placeholder="Введіть протяжність" type="number" step="0.01" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="TravelTime" class="form-label">Час в дорозі (хв)</label>
+        <input asp-for="TravelTime" class="form-control" placeholder="Введіть час в дорозі" type="number" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Додати до БД</button>
+    <!-- Скидання форми шляхом перезавантаження -->
+    <button type="button" class="btn btn-secondary" onclick="window.location.href='@Url.Action("Index", "Transport")'">Скинути</button>
+</form>
+
+<!-- Форма для видалення всіх записів -->
+<form asp-action="DeleteAll" method="post" style="margin-top: 15px;">
+    <button type="submit" class="btn btn-danger">Видалити всі записи</button>
+</form>
+
+@if (transports != null && transports.Any())
+{
+    <hr />
+    <div class="result">
+        <h2>Вміст таблиці Transports:</h2>
+        <!-- Таблиця з даними -->
+        <table class="table custom-bordered-table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Вид транспорту</th>
+                    <th>Номер маршруту</th>
+                    <th>Протяжність маршруту (км)</th>
+                    <th>Час в дорозі (хв)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in transports)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.TransportType</td>
+                        <td>@item.RouteNumber</td>
+                        <td>@item.RouteDistance</td>
+                        <td>@item.TravelTime</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <hr />
+    <div class="result">
+        <h2>Вміст таблиці Transports:</h2>
+        <p>Таблиця порожня.</p>
+    </div>
+}

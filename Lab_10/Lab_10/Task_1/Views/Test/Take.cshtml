@@ -1,0 +1,48 @@
+﻿@model List<Task_1.Models.TestAnswerViewModel>
+@{
+    ViewData["Title"] = "Проходження тесту";
+}
+
+<form asp-action="Take" method="post">
+    <div class="form-card animate__animated animate__fadeIn">
+        <h2>Питання</h2>
+
+        @* Валідаційна підказка, якщо раптом знадобиться *@
+        <span asp-validation-summary="ModelOnly" class="text-danger mb-3"></span>
+
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <div class="mb-4">
+                @* приховані поля для Id та CorrectOption *@
+                <input asp-for="@Model[i].Id" type="hidden" />
+                <input asp-for="@Model[i].CorrectOption" type="hidden" />
+
+                <p><strong>@(i + 1). @Model[i].Text</strong></p>
+                <div>
+                    <label>
+                        <input asp-for="@Model[i].SelectedOption" value="A" type="radio" />
+                        @Model[i].OptionA
+                    </label><br />
+                    <label>
+                        <input asp-for="@Model[i].SelectedOption" value="B" type="radio" />
+                        @Model[i].OptionB
+                    </label><br />
+                    <label>
+                        <input asp-for="@Model[i].SelectedOption" value="C" type="radio" />
+                        @Model[i].OptionC
+                    </label><br />
+                    <label>
+                        <input asp-for="@Model[i].SelectedOption" value="D" type="radio" />
+                        @Model[i].OptionD
+                    </label>
+                </div>
+            </div>
+        }
+
+        <button type="submit" class="btn btn-success">Завершити</button>
+    </div>
+</form>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

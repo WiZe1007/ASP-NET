@@ -1,0 +1,159 @@
+﻿@{
+    Layout = "_Layout"; // Використовуємо спільний макет
+    ViewData["Title"] = "Завдання 3 (Варіант 12) — Абсолютне позиціонування"; // Встановлюємо заголовок сторінки
+}
+
+<!-- Стилі для форми (можна винести в окремий CSS-файл) -->
+<style>
+    /* Контейнер форми – всі дочірні елементи позиціонуються відносно нього */
+    .form-container {
+        position: relative;
+        width: 600px; /* Фіксована ширина контейнера */
+        height: 400px; /* Фіксована висота контейнера */
+        border: 1px solid #ccc; /* Тонка рамка */
+        margin-bottom: 20px; /* Відступ знизу */
+        padding: 10px; /* Внутрішній відступ */
+        background: rgba(255, 255, 255, 0.8); /* Напівпрозорий фон */
+    }
+    /* Стилі для міток, які позначають поля форми */
+    .labelName, .labelPhone, .labelEmail, .labelBirthdate {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .labelName {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .labelPhone {
+        position: absolute;
+        left: 20px;
+        top: 50px;
+    }
+
+    .labelEmail {
+        position: absolute;
+        left: 50px;
+        top: 80px;
+    }
+
+    .labelBirthdate {
+        position: absolute;
+        left: 60px;
+        top: 110px;
+    }
+    /* Стилі для кнопок з анімацією */
+    .buttonSubmit, .buttonReset {
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        padding: 8px 16px;
+        font-weight: bold;
+        cursor: pointer; /* Зміна курсора при наведенні */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анімація для приємного ефекту */
+    }
+
+    .buttonSubmit {
+        position: absolute;
+        left: 180px;
+        top: 20px;
+        background-color: #007bff; /* Синій фон для кнопки відправки */
+    }
+
+        .buttonSubmit:hover {
+            transform: scale(1.05); /* Збільшення кнопки при наведенні */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Легка тінь */
+        }
+
+    .buttonReset {
+        position: absolute;
+        left: 260px;
+        top: 190px;
+        background: linear-gradient(45deg, #dc3545, #e4606d); /* Градієнт для кнопки скидання */
+    }
+
+        .buttonReset:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    /* Стилі для полів введення даних */
+    .inputName, .inputPhone, .inputEmail, .inputBirthdate {
+        position: absolute;
+        width: 200px; /* Фіксована ширина полів */
+        padding: 6px;
+        border: 1px solid #ccc; /* Рамка для виділення поля */
+        border-radius: 5px;
+        transition: transform 0.3s ease, border-color 0.3s ease; /* Анімація при фокусі */
+    }
+
+    .inputName {
+        left: 305px;
+        top: 20px;
+    }
+
+    .inputPhone {
+        left: 310px;
+        top: 60px;
+    }
+
+    .inputEmail {
+        left: 315px;
+        top: 100px;
+    }
+
+    .inputBirthdate {
+        left: 315px;
+        top: 140px;
+    }
+        /* Зміна стилю поля при фокусі */
+        .inputName:focus, .inputPhone:focus, .inputEmail:focus, .inputBirthdate:focus {
+            border-color: #007bff;
+            transform: scale(1.02); /* Невелике збільшення для візуального ефекту */
+        }
+</style>
+
+<!-- Форма з абсолютним позиціонуванням -->
+<div class="form-container">
+    <form method="post" asp-action="Index" asp-controller="Home">
+        <!-- Поле для введення імені -->
+        <div class="labelName">Ім’я</div>
+        <!-- Кнопка для відправки форми -->
+        <button type="submit" name="action" value="submit" class="buttonSubmit">
+            Відіслати
+        </button>
+        <input type="text" name="Name" value="@ViewBag.Name" class="inputName" />
+
+        <!-- Поле для введення телефону -->
+        <div class="labelPhone">Телефон</div>
+        <input type="text" name="Phone" value="@ViewBag.Phone" class="inputPhone" />
+
+        <!-- Поле для введення поштової скриньки -->
+        <div class="labelEmail">Поштова скринька</div>
+        <input type="text" name="Email" value="@ViewBag.Email" class="inputEmail" />
+
+        <!-- Поле для введення дати народження -->
+        <div class="labelBirthdate">Дата народження</div>
+        <input type="date" name="Birthdate" value="@ViewBag.Birthdate" class="inputBirthdate" />
+
+        <!-- Кнопка для скидання форми -->
+        <button type="submit" name="action" value="reset" class="buttonReset">
+            Скинути
+        </button>
+    </form>
+</div>
+
+<!-- Відображення даних, якщо користувач щось ввів -->
+@if (!string.IsNullOrEmpty(ViewBag.Name)
+|| !string.IsNullOrEmpty(ViewBag.Phone)
+|| !string.IsNullOrEmpty(ViewBag.Email)
+|| !string.IsNullOrEmpty(ViewBag.Birthdate))
+{
+    <hr />
+    <h3>Введені дані:</h3>
+    <p>Ім’я: @ViewBag.Name</p>
+    <p>Телефон: @ViewBag.Phone</p>
+    <p>Поштова скринька: @ViewBag.Email</p>
+    <p>Дата народження: @ViewBag.Birthdate</p>
+}

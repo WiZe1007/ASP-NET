@@ -1,0 +1,71 @@
+﻿@model Task_5.Models.TriangleViewModel
+
+@{
+    // Використовуємо спільний layout та задаємо заголовок сторінки
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Геометричні розрахунки";
+}
+
+<!-- Відображення картинки рівнобічного прямокутного трикутника -->
+<div class="triangle-image text-center mb-4">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/45-45-triangle.svg/300px-45-45-triangle.svg.png" alt="Рівнобічний прямокутний трикутник" class="img-fluid" />
+</div>
+
+<div class="form-container">
+    <h2 class="form-title">Розрахунок периметру та площі рівнобічного прямокутного трикутника</h2>
+
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <!-- Поле для введення значення гіпотенузи -->
+        <div class="mb-3">
+            @Html.LabelFor(m => m.Hypotenuse)
+            @Html.TextBoxFor(m => m.Hypotenuse, new { @class = "form-control", type = "number", step = "any", placeholder = "Введіть значення гіпотенузи" })
+            @Html.ValidationMessageFor(m => m.Hypotenuse, "", new { @class = "text-danger" })
+        </div>
+
+        <!-- Селектор для вибору типу розрахунку -->
+        <div class="mb-3">
+            @Html.LabelFor(m => m.CalculationType, "Оберіть тип розрахунку")
+            @Html.DropDownListFor(m => m.CalculationType, new SelectList(new[]
+                     {
+        new { Value = "", Text = "-- Оберіть --" },
+        new { Value = "Периметр", Text = "Периметр" },
+        new { Value = "Площа", Text = "Площа" },
+        new { Value = "Обидва", Text = "Обидва" }
+        }, "Value", "Text"), new { @class = "form-select" })
+            @Html.ValidationMessageFor(m => m.CalculationType, "", new { @class = "text-danger" })
+        </div>
+
+        <!-- Кнопки для відправки форми або скидання даних -->
+        <div class="text-center">
+            <button type="submit" class="btn-custom me-3">Відіслати</button>
+            <!-- Скидання форми через перехід на GET-версію -->
+            <button type="button" onclick="window.location.href='@Url.Action("Index", "Home")'" class="btn-custom btn-reset">Скинути</button>
+        </div>
+    }
+
+    <!-- Якщо є повідомлення про помилку, виводимо його -->
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="alert alert-danger mt-3">
+            @Model.ErrorMessage
+        </div>
+    }
+    else if (Model.Perimeter != null || Model.Area != null)
+    {
+        <!-- Вивід результатів розрахунку, якщо вони присутні -->
+        <div class="data-display mt-3">
+            <h4>Результати розрахунку:</h4>
+            <ul>
+                @if (Model.Perimeter != null)
+                {
+                    <li><strong>Периметр:</strong> @(Model.Perimeter.Value.ToString("F2"))</li>
+                }
+                @if (Model.Area != null)
+                {
+                    <li><strong>Площа:</strong> @(Model.Area.Value.ToString("F2"))</li>
+                }
+            </ul>
+        </div>
+    }
+</div>

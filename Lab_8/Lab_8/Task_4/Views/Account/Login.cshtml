@@ -1,0 +1,52 @@
+﻿@model Task_4.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Login";  // Встановлюємо заголовок сторінки
+}
+<div class="form-card animate__animated animate__fadeIn">
+    <h2>Login</h2>  <!-- Заголовок форми входу -->
+
+    <form asp-action="Login" method="post" novalidate>
+        <!-- Форма для входу -->
+
+        <div class="form-material mb-4">
+            <span asp-validation-for="Name" class="error-message"></span>  <!-- Помилка для поля Name -->
+            <label asp-for="Name">Name</label>  <!-- Лейбл для поля Name -->
+            <input asp-for="Name" class="form-control" />  <!-- Поле для введення імені -->
+        </div>
+
+        <div class="form-material mb-4">
+            <span asp-validation-for="Password" class="error-message"></span>  <!-- Помилка для поля Password -->
+            <label asp-for="Password">Password</label>  <!-- Лейбл для поля Password -->
+            <input asp-for="Password" type="password" class="form-control" />  <!-- Поле для введення пароля -->
+        </div>
+
+        <span asp-validation-summary="ModelOnly" class="text-danger mb-3 d-block"></span>  <!-- Підсумок помилок -->
+
+        <button type="submit" class="btn-register">LOGIN</button>  <!-- Кнопка для входу -->
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");  // Підключаємо частковий скрипт для валідації
+    }
+    <script>
+        $(function() {
+            var form = $('form');
+            form.removeData('validator').removeData('unobtrusiveValidation');  // Перезавантажуємо валідацію
+            $.validator.setDefaults({
+                showErrors: function(errorMap, errorList) {
+                    this.defaultShowErrors();  // Викликаємо стандартний метод для показу помилок
+                    $('.error-message').each(function() {
+                        var txt = $(this).text().trim();  // Очищаємо пробіли в тексті помилки
+                        if (txt) {
+                            var parts = txt.split(' ');  // Розділяємо текст на частини
+                            $(this).html(parts.join('<br/>'));  // Виводимо помилки через <br/>
+                        }
+                    });
+                }
+            });
+            $.validator.unobtrusive.parse(form);  // Запускаємо валідацію
+        });
+    </script>
+}

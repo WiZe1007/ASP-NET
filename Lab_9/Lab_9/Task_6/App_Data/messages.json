@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "f2edf2bd-59df-4066-926b-ead311d73533",
+    "From": "Bogdan",
+    "To": "Test1",
+    "Theme": "How are you?",
+    "Text": "Hello!",
+    "SentAt": "2025-04-29T13:54:05.6950301+03:00"
+  },
+  {
+    "Id": "eee6de7a-3ccc-4847-be2f-e8f7fdccc1d2",
+    "From": "Test3",
+    "To": "Bogdan",
+    "Theme": "How are you?",
+    "Text": "Example",
+    "SentAt": "2025-05-05T12:39:15.2163888+03:00"
+  }
+]

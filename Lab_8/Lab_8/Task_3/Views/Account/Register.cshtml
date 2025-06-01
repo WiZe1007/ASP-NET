@@ -1,0 +1,68 @@
+﻿@model Task_3.Models.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";  // Встановлюємо заголовок для сторінки
+}
+<div class="form-card animate__animated animate__fadeIn">
+    <h2>Register</h2>  <!-- Заголовок форми -->
+
+    <form asp-action="Register" method="post" novalidate>
+        <!-- Форма реєстрації -->
+
+        <div class="form-material position-relative mb-4">
+            <span asp-validation-for="Name" class="error-message"></span>  <!-- Показуємо повідомлення про помилку для поля Name -->
+            <label asp-for="Name">Name</label>  <!-- Лейбл для поля Name -->
+            <input asp-for="Name" class="form-control" />  <!-- Поле для введення імені -->
+        </div>
+
+        <div class="form-material position-relative mb-4">
+            <span asp-validation-for="Email" class="error-message"></span>  <!-- Показуємо повідомлення про помилку для поля Email -->
+            <label asp-for="Email">Email</label>  <!-- Лейбл для поля Email -->
+            <input asp-for="Email" class="form-control" />  <!-- Поле для введення Email -->
+        </div>
+
+        <div class="form-material position-relative mb-4">
+            <span asp-validation-for="Phone" class="error-message"></span>  <!-- Показуємо повідомлення про помилку для поля Phone -->
+            <label asp-for="Phone">Phone</label>  <!-- Лейбл для поля Phone -->
+            <input asp-for="Phone" class="form-control" />  <!-- Поле для введення Phone -->
+        </div>
+
+        <div class="form-material position-relative mb-4">
+            <span asp-validation-for="Password" class="error-message"></span>  <!-- Показуємо повідомлення про помилку для поля Password -->
+            <label asp-for="Password">Password</label>  <!-- Лейбл для поля Password -->
+            <input asp-for="Password" type="password" class="form-control" />  <!-- Поле для введення пароля -->
+        </div>
+
+        <div class="form-material position-relative mb-4">
+            <span asp-validation-for="ConfirmPassword" class="error-message"></span>  <!-- Показуємо повідомлення про помилку для поля ConfirmPassword -->
+            <label asp-for="ConfirmPassword">Confirm Password</label>  <!-- Лейбл для підтвердження пароля -->
+            <input asp-for="ConfirmPassword" type="password" class="form-control" />  <!-- Поле для підтвердження пароля -->
+        </div>
+
+        <button type="submit" class="btn-register">REGISTER</button>  <!-- Кнопка для реєстрації -->
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");  // Підключення скриптів для валідації
+    }
+    <script>
+        $(function() {
+            var form = $('form');
+            form.removeData('validator').removeData('unobtrusiveValidation');  // Перезавантаження налаштувань валідації
+            $.validator.setDefaults({
+                showErrors: function(errorMap, errorList) {
+                    this.defaultShowErrors();  // Показуємо помилки за замовчуванням
+                    $('.error-message').each(function() {
+                        var txt = $(this).text().trim();  // Обробляємо текст помилки
+                        if (txt) {
+                            var parts = txt.split(' ');  // Розділяємо текст на частини
+                            $(this).html(parts.join('<br/>'));  // Виводимо помилки через <br/>
+                        }
+                    });
+                }
+            });
+            $.validator.unobtrusive.parse(form);  // Активуємо валідацію
+        });
+    </script>
+}

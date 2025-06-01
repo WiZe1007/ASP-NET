@@ -1,0 +1,35 @@
+﻿@model Task_4.Models.EditPhoneViewModel
+@{
+    ViewData["Title"] = "Edit Phone";
+}
+<div class="form-card animate__animated animate__fadeIn">
+    <h2>Редагувати телефон</h2>
+    <form asp-action="EditPhone" method="post" novalidate>
+        <div class="form-material mb-4">
+            <span asp-validation-for="Phone" class="error-message"></span>
+            <label asp-for="Phone">New Phone</label>
+            <input asp-for="Phone" class="form-control" />
+        </div>
+        <button type="submit" class="btn-register">Save</button>
+    </form>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+    <script>
+        $(function(){
+          var f=$('form');
+          f.removeData('validator').removeData('unobtrusiveValidation');
+          $.validator.setDefaults({
+            showErrors(eMap,eList){
+              this.defaultShowErrors();
+              $('.error-message').each(function(){
+                var txt=$(this).text().trim();
+                if(txt)$(this).html(txt.split(' ').join('<br/>'));
+              });
+            }
+          });
+          $.validator.unobtrusive.parse(f);
+        });
+    </script>
+}

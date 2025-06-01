@@ -1,0 +1,48 @@
+﻿@{
+    // Визначаємо, на якому кроці перебуваємо і яку сторону вводити
+    int step = ViewBag.Step;
+    string sideName = "";
+    switch (step)
+    {
+        case 1: sideName = "A"; break;
+        case 2: sideName = "B"; break;
+        case 3: sideName = "C"; break;
+    }
+    // Якщо всі сторони не введено – показуємо форму, інакше заголовок "Результат"
+    ViewData["Title"] = step < 4 ? $"Введення сторони {sideName}" : "Результат";
+}
+
+@if (step < 4)
+{
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="form-box">
+                <!-- Заголовок для форми вводу -->
+                <h2 class="text-center">Введення сторони @sideName</h2>
+                <form asp-action="Index" method="post">
+                    <div class="form-group">
+                        <!-- Підпис до поля введення для сторони -->
+                        <label for="sideInput">Сторона @sideName:</label>
+                        <input type="text" class="form-control" id="sideInput" name="sideInput" placeholder="Введіть довжину сторони @sideName" required />
+                    </div>
+                    <!-- Кнопка для переходу до наступного вводу -->
+                    <button type="submit" class="btn btn-primary btn-block">Далі</button>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="form-box text-center">
+                <!-- Відображення результату розрахунку -->
+                <h2>Результат</h2>
+                <p>@ViewBag.Result</p>
+                <!-- Посилання для початку нового обчислення -->
+                <a href="@Url.Action("Index", "Triangle", new { reset = true })" class="btn btn-primary">Нове обчислення</a>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,172 @@
+﻿@{
+    // Використовуємо спільний layout та задаємо заголовок сторінки
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Анкета відвідувача ресторану";
+}
+
+<div class="form-container">
+    <h2 class="form-title">Анкета відвідувача ресторану</h2>
+
+    <!-- Форма, що надсилає дані методом POST на Home/Index -->
+    <form method="post">
+        <!-- Блок з контактною інформацією -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="2" class="bg-light">Контактна інформація</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ім’я</td>
+                    <td><input type="text" name="Name" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td>Телефон</td>
+                    <td><input type="text" name="Phone" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td>Пошта</td>
+                    <td><input type="email" name="Email" class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td>Дата відвідування</td>
+                    <td><input type="date" name="VisitDate" class="form-control" /></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Блок з персональною інформацією -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="2" class="bg-light">Персональна інформація</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Вік</td>
+                    <td>
+                        <select name="Age" class="form-select">
+                            <option value="">-- Оберіть категорію --</option>
+                            <option>До 18</option>
+                            <option>18-25</option>
+                            <option>26-35</option>
+                            <option>36-45</option>
+                            <option>46 і старше</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Улюблена кухня</td>
+                    <td>
+                        <select name="Cuisine" class="form-select">
+                            <option value="">-- Оберіть кухню --</option>
+                            <option>Грецька</option>
+                            <option>Італійська</option>
+                            <option>Французька</option>
+                            <option>Японська</option>
+                            <option>Українська</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Які страви ви б хотіли бачити в меню?</td>
+                    <td>
+                        <textarea name="Dishes" class="form-control"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Блок з оцінкою ресторану -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="2" class="bg-light">Оцінка нашого ресторану</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Чому обрали нашу установу?</td>
+                    <td>
+                        <div>
+                            <input type="radio" name="Reason" value="Недалеко від роботи/дому" id="reason1" />
+                            <label for="reason1">Недалеко від роботи/дому</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="Reason" value="Побачив рекламу" id="reason2" />
+                            <label for="reason2">Побачив рекламу</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="Reason" value="Порадили" id="reason3" />
+                            <label for="reason3">Порадили</label>
+                        </div>
+                        <div style="white-space: nowrap;">
+                            <input type="radio" name="Reason" value="Оптимальне співвідношення ціни та якості" id="reason4" />
+                            <label for="reason4">Оптимальне співвідношення ціни та якості</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Чи будете рекомендувати нашу установу друзям та знайомим?</td>
+                    <td>
+                        <input type="radio" name="Recommend" value="Так" id="recYes" />
+                        <label for="recYes">Так</label>
+                        <br />
+                        <input type="radio" name="Recommend" value="Ні" id="recNo" />
+                        <label for="recNo">Ні</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Кнопки для відправки та скидання форми -->
+        <div class="text-center mt-3">
+            <button type="submit" class="btn-custom me-3">Відіслати</button>
+            <button type="button" onclick="window.location.href='@Url.Action("Index", "Home")'" class="btn-custom btn-reset">Скинути</button>
+        </div>
+    </form>
+</div>
+
+<!-- Блок з топологією зображень, реалізований засобами Razor -->
+<div class="image-topology mt-4">
+    <h3 class="text-center">Галерея зображень</h3>
+    <div class="row">
+        @{
+            // Створюємо список URL зображень (логіка виконана в Razor)
+            var imageUrls = new List<string>
+        {
+        "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
+        "https://images.unsplash.com/photo-1528605248644-14dd04022da1",
+        "https://images.unsplash.com/photo-1506784365847-bbad939e9335"
+        };
+        }
+        @foreach (var url in imageUrls)
+        {
+            <div class="col-md-3 col-sm-6 mb-3">
+                <img src="@url" alt="Image" class="img-fluid rounded" />
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Відображення даних, якщо форма відправлена -->
+@if (ViewBag.Name != null)
+{
+    <div class="data-display mt-4">
+        <h4>Введені дані:</h4>
+        <ul>
+            <li><strong>Ім’я:</strong> @ViewBag.Name</li>
+            <li><strong>Телефон:</strong> @ViewBag.Phone</li>
+            <li><strong>Пошта:</strong> @ViewBag.Email</li>
+            <li><strong>Дата відвідування:</strong> @ViewBag.VisitDate</li>
+            <li><strong>Вік:</strong> @ViewBag.Age</li>
+            <li><strong>Улюблена кухня:</strong> @ViewBag.Cuisine</li>
+            <li><strong>Бажані страви:</strong> @ViewBag.Dishes</li>
+            <li><strong>Причина вибору:</strong> @ViewBag.Reason</li>
+            <li><strong>Чи рекомендуватимете?</strong> @ViewBag.Recommend</li>
+        </ul>
+    </div>
+}

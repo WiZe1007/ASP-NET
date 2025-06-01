@@ -1,0 +1,13 @@
+﻿@model Task_3.Models.User
+@{
+    ViewData["Title"] = "Profile";
+}
+<div class="form-card animate__fadeIn">
+    <h2>Мій профіль</h2>
+    <ul class="list-unstyled">
+        <li><strong>Name:</strong> @Model.Name <a asp-action="EditName">Edit</a></li>
+        <li><strong>Email:</strong> @Model.Email <a asp-action="EditEmail">Edit</a></li>
+        <li><strong>Phone:</strong> @Model.Phone <a asp-action="EditPhone">Edit</a></li>
+        <li><strong>Password:</strong> ******** <a asp-action="EditPassword">Edit</a></li>
+    </ul>
+</div>

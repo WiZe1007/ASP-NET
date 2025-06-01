@@ -1,0 +1,166 @@
+﻿@model Task_4.Models.VisitorViewModel
+
+@{
+    // Встановлюємо загальний layout та задаємо заголовок сторінки
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Анкета відвідувача ресторану";
+}
+
+<div class="form-container">
+    <h2 class="form-title">Анкета відвідувача ресторану</h2>
+
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <!-- Таблиця для контактної інформації -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="2" class="bg-light">Контактна інформація</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Name)</td>
+                    <!-- Поле для введення імені -->
+                    <td>@Html.TextBoxFor(m => m.Name, new { @class = "form-control" })</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Phone)</td>
+                    <!-- Поле для введення телефону -->
+                    <td>@Html.TextBoxFor(m => m.Phone, new { @class = "form-control" })</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Email)</td>
+                    <!-- Поле для введення email (тип - email) -->
+                    <td>@Html.TextBoxFor(m => m.Email, new { @class = "form-control", type = "email" })</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.VisitDate)</td>
+                    <!-- Поле для введення дати (формат дати) -->
+                    <td>@Html.TextBoxFor(m => m.VisitDate, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Таблиця для персональної інформації -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="2" class="bg-light">Персональна інформація</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Age)</td>
+                    <td>
+                        <!-- Селектор для вибору вікової категорії -->
+                        @Html.DropDownListFor(m => m.Age, new SelectList(new[] {
+                    new { Value = "", Text = "-- Оберіть категорію --" },
+                    new { Value = "До 18", Text = "До 18" },
+                    new { Value = "18-25", Text = "18-25" },
+                    new { Value = "26-35", Text = "26-35" },
+                    new { Value = "36-45", Text = "36-45" },
+                    new { Value = "46 і старше", Text = "46 і старше" }
+                    }, "Value", "Text"), new { @class = "form-select" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Cuisine)</td>
+                    <td>
+                        <!-- Селектор для вибору улюбленої кухні -->
+                        @Html.DropDownListFor(m => m.Cuisine, new SelectList(new[] {
+                    new { Value = "", Text = "-- Оберіть кухню --" },
+                    new { Value = "Грецька", Text = "Грецька" },
+                    new { Value = "Італійська", Text = "Італійська" },
+                    new { Value = "Французька", Text = "Французька" },
+                    new { Value = "Японська", Text = "Японська" },
+                    new { Value = "Українська", Text = "Українська" }
+                    }, "Value", "Text"), new { @class = "form-select" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Dishes)</td>
+                    <!-- Текстове поле для побажань щодо страв -->
+                    <td>@Html.TextAreaFor(m => m.Dishes, new { @class = "form-control" })</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Таблиця для оцінки ресторану -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="2" class="bg-light">Оцінка нашого ресторану</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Радіокнопки для вибору причини -->
+                <tr>
+                    <td>@Html.LabelFor(m => m.Reason)</td>
+                    <td style="white-space: nowrap;">
+                        <span>
+                            <input type="radio" name="Reason" value="Недалеко від роботи/дому" id="reason1"
+                            @(Model.Reason == "Недалеко від роботи/дому" ? "checked" : "") />
+                            <label for="reason1">Недалеко від роботи/дому</label>
+                        </span>
+                        <br />
+                        <span>
+                            <input type="radio" name="Reason" value="Побачив рекламу" id="reason2"
+                            @(Model.Reason == "Побачив рекламу" ? "checked" : "") />
+                            <label for="reason2">Побачив рекламу</label>
+                        </span>
+                        <br />
+                        <span>
+                            <input type="radio" name="Reason" value="Порадили" id="reason3"
+                            @(Model.Reason == "Порадили" ? "checked" : "") />
+                            <label for="reason3">Порадили</label>
+                        </span>
+                        <br />
+                        <span>
+                            <input type="radio" name="Reason" value="Оптимальне співвідношення ціни та якості" id="reason4"
+                            @(Model.Reason == "Оптимальне співвідношення ціни та якості" ? "checked" : "") />
+                            <label for="reason4">Оптимальне співвідношення ціни та якості</label>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Recommend)</td>
+                    <td>
+                        <!-- Радіокнопки для вибору, чи рекомендуватимуть ресторан -->
+                        <input type="radio" name="Recommend" value="Так" id="recYes" @(Model.Recommend == "Так" ? "checked" : "") />
+                        <label for="recYes">Так</label>
+                        <br />
+                        <input type="radio" name="Recommend" value="Ні" id="recNo" @(Model.Recommend == "Ні" ? "checked" : "") />
+                        <label for="recNo">Ні</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Кнопки для відправки форми та її скидання -->
+        <div class="text-center mt-3">
+            <button type="submit" class="btn-custom me-3">Відіслати</button>
+            <!-- Кнопка "Скинути": переходить до GET-версії, щоб очистити форму -->
+            <button type="button" onclick="window.location.href='@Url.Action("Index", "Home")'" class="btn-custom btn-reset">Скинути</button>
+        </div>
+    }
+</div>
+
+<!-- Якщо ім'я не порожнє, відображаємо введені дані -->
+@if (Model.Name != null)
+{
+    <div class="data-display">
+        <h4>Введені дані:</h4>
+        <ul>
+            <li><strong>Ім’я:</strong> @Model.Name</li>
+            <li><strong>Телефон:</strong> @Model.Phone</li>
+            <li><strong>Пошта:</strong> @Model.Email</li>
+            <li><strong>Дата відвідування:</strong> @(Model.VisitDate.HasValue ? Model.VisitDate.Value.ToString("yyyy-MM-dd") : "")</li>
+            <li><strong>Вік:</strong> @Model.Age</li>
+            <li><strong>Улюблена кухня:</strong> @Model.Cuisine</li>
+            <li><strong>Бажані страви:</strong> @Model.Dishes</li>
+            <li><strong>Причина вибору:</strong> @Model.Reason</li>
+            <li><strong>Чи рекомендуватимете?</strong> @Model.Recommend</li>
+        </ul>
+    </div>
+}

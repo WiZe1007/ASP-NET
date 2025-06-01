@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Введення сторони C";
+    // Задаємо клас для фону сторінки з введенням третьої сторони
+    ViewBag.BodyClass = "bg3";
+}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="form-box">
+            <h2 class="text-center">Введення сторони C</h2>
+            <form asp-action="View3" method="post">
+                <div class="form-group">
+                    <label for="sideC">Сторона C:</label>
+                    <!-- Поле для введення сторони C -->
+                    <input type="text" class="form-control" id="sideC" name="sideC" placeholder="Введіть довжину сторони C" required />
+                </div>
+                <!-- Кнопка для обчислення результату -->
+                <button type="submit" class="btn btn-primary btn-block">Розрахувати</button>
+            </form>
+        </div>
+    </div>
+</div>

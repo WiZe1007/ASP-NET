@@ -1,0 +1,24 @@
+﻿@model Task_4.Models.Message
+@{
+    ViewData["Title"] = "Message Details";
+}
+<div class="form-card animate__animated animate__fadeIn">
+    <h2>Повідомлення</h2>
+    <dl class="row">
+        <dt class="col-sm-3">From</dt>
+        <dd class="col-sm-9">@Model.From</dd>
+
+        <dt class="col-sm-3">To</dt>
+        <dd class="col-sm-9">@Model.To</dd>
+
+        <dt class="col-sm-3">Theme</dt>
+        <dd class="col-sm-9">@Model.Theme</dd>
+
+        <dt class="col-sm-3">Sent At</dt>
+        <dd class="col-sm-9">@Model.SentAt.ToString("f")</dd>
+
+        <dt class="col-sm-3">Text</dt>
+        <dd class="col-sm-9">@Model.Text</dd>
+    </dl>
+    <a asp-action="Inbox" class="btn btn-secondary">Back to Inbox</a>
+</div>

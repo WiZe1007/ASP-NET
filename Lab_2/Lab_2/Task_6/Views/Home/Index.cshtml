@@ -1,0 +1,211 @@
+﻿@{
+    Layout = "_Layout"; // Використовуємо власне подання, не базове _Layout.cshtml
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Завдання 6 (Варіант №12)</title>
+    <style>
+        /* Контейнер форми – всі абсолютно позиціоновані елементи розташовуються відносно нього */
+        .form-container {
+            position: relative;
+            width: 600px; /* Задаємо ширину форми */
+            height: 400px; /* Задаємо висоту форми */
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+        /* --- ЛІВА КОЛОНКА (місто) --- */
+        .cityTitle {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            font-weight: bold;
+        }
+
+        .cityLabelKharkiv {
+            position: absolute;
+            left: 90px;
+            top: 40px;
+        }
+
+        .cityLabelKyiv {
+            position: absolute;
+            left: 105px;
+            top: 65px;
+        }
+
+        .cityLabelOdesa {
+            position: absolute;
+            left: 60px;
+            top: 85px;
+        }
+
+        .cityLabelZap {
+            position: absolute;
+            left: 20px;
+            top: 105px;
+        }
+        /* Радіо-кнопки для міст */
+        .cityRadioKharkiv {
+            position: absolute;
+            left: 150px;
+            top: 40px;
+        }
+
+        .cityRadioKyiv {
+            position: absolute;
+            left: 150px;
+            top: 65px;
+        }
+
+        .cityRadioOdesa {
+            position: absolute;
+            left: 150px;
+            top: 85px;
+        }
+
+        .cityRadioZap {
+            position: absolute;
+            left: 150px;
+            top: 105px;
+        }
+        /* Кнопка "Вибрати" для лівої колонки */
+        .chooseButton {
+            position: absolute;
+            left: 140px;
+            top: 130px;
+        }
+        /* --- ПРАВА КОЛОНКА (транспорт) --- */
+        .transportTitle {
+            position: absolute;
+            left: 300px;
+            top: 20px;
+            font-weight: bold;
+        }
+
+        .transportLabelBus {
+            position: absolute;
+            left: 385px;
+            top: 40px;
+        }
+
+        .transportLabelTrain {
+            position: absolute;
+            left: 405px;
+            top: 65px;
+        }
+
+        .transportLabelPlane {
+            position: absolute;
+            left: 350px;
+            top: 85px;
+        }
+        /* Радіо-кнопки для транспорту */
+        .transportRadioBus {
+            position: absolute;
+            left: 460px;
+            top: 40px;
+        }
+
+        .transportRadioTrain {
+            position: absolute;
+            left: 460px;
+            top: 65px;
+        }
+
+        .transportRadioPlane {
+            position: absolute;
+            left: 460px;
+            top: 85px;
+        }
+        /* Кнопка "Відмовитися" для правої колонки */
+        .cancelButton {
+            position: absolute;
+            left: 395px;
+            top: 130px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Форма з абсолютним позиціонуванням елементів -->
+    <form method="post" asp-action="Index" asp-controller="Home" class="form-container">
+        <!-- Ліва колонка: місто -->
+        <div class="cityTitle">Виберіть місто:</div>
+        <div class="cityLabelKharkiv">Харків</div>
+        <div class="cityRadioKharkiv">
+            <input type="radio" name="City" value="Kharkiv" @(ViewBag.City == "Kharkiv" ? "checked" : "") />
+        </div>
+        <div class="cityLabelKyiv">Київ</div>
+        <div class="cityRadioKyiv">
+            <input type="radio" name="City" value="Kyiv" @(ViewBag.City == "Kyiv" ? "checked" : "") />
+        </div>
+        <div class="cityLabelOdesa">Одеса</div>
+        <div class="cityRadioOdesa">
+            <input type="radio" name="City" value="Odesa" @(ViewBag.City == "Odesa" ? "checked" : "") />
+        </div>
+        <div class="cityLabelZap">Запоріжжя</div>
+        <div class="cityRadioZap">
+            <input type="radio" name="City" value="Zaporizhzhia" @(ViewBag.City == "Zaporizhzhia" ? "checked" : "") />
+        </div>
+        <div class="chooseButton">
+            <!-- Кнопка підтвердження вибору міста -->
+            <button type="submit" name="action" value="choose" class="btn btn-primary">Вибрати</button>
+        </div>
+
+        <!-- Права колонка: транспорт -->
+        <div class="transportTitle">Виберіть транспорт:</div>
+        <div class="transportLabelBus">Автобус</div>
+        <div class="transportRadioBus">
+            <input type="radio" name="Transport" value="Bus" @(ViewBag.Transport == "Bus" ? "checked" : "") />
+        </div>
+        <div class="transportLabelTrain">Потяг</div>
+        <div class="transportRadioTrain">
+            <input type="radio" name="Transport" value="Train" @(ViewBag.Transport == "Train" ? "checked" : "") />
+        </div>
+        <div class="transportLabelPlane">Літак</div>
+        <div class="transportRadioPlane">
+            <input type="radio" name="Transport" value="Plane" @(ViewBag.Transport == "Plane" ? "checked" : "") />
+        </div>
+        <div class="cancelButton">
+            <!-- Кнопка скидання вибору -->
+            <button type="submit" name="action" value="cancel" class="btn btn-danger">Відмовитися</button>
+        </div>
+    </form>
+
+    @* Логіка перетворення вибраних кодів на відображувані назви *@
+    @{
+        string cityCode = ViewBag.City as string ?? "";
+        string transportCode = ViewBag.Transport as string ?? "";
+        string cityName = cityCode switch
+        {
+            "Kharkiv" => "Харків",
+            "Kyiv" => "Київ",
+            "Odesa" => "Одеса",
+            "Zaporizhzhia" => "Запоріжжя",
+            _ => ""
+        };
+        string transportName = transportCode switch
+        {
+            "Bus" => "Автобус",
+            "Train" => "Потяг",
+            "Plane" => "Літак",
+            _ => ""
+        };
+    }
+
+    @if (ViewBag.ShowResult == true)
+    {
+        <hr />
+        <div class="result-text">
+            <h3>Вибрані параметри:</h3>
+            <p>Місто: @cityName</p>
+            <p>Транспорт: @transportName</p>
+        </div>
+    }
+</body>
+</html>

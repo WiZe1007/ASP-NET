@@ -1,0 +1,71 @@
+/* Загальні налаштування сторінки для повноекранного відображення */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Використовуємо flexbox для зручного розташування вмісту */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Головний контейнер займає всю доступну висоту */
+main {
+    flex: 1 0 auto;
+}
+
+/* Футер завжди знаходиться внизу сторінки */
+footer {
+    flex-shrink: 0;
+}
+
+/* Фонові зображення для різних кроків */
+body.bg1 {
+    /* Фон для кроку 1 */
+    background: url('https://img.freepik.com/free-photo/morskie-oko-tatry_1204-510.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.bg2 {
+    /* Фон для кроку 2 */
+    background: url('https://img.freepik.com/free-photo/vestrahorn-mountains-stokksnes-iceland_335224-667.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.bg3 {
+    /* Фон для кроку 3 */
+    background: url('https://img.freepik.com/free-photo/beautiful-shot-natural-scenery-autumn_181624-25934.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.bg4 {
+    /* Фон для відображення результату */
+    background: url('https://img.freepik.com/free-photo/scenic-view-mountains-lake_53876-138187.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Стилізація блоку форми – прозорий фон з плавною анімацією */
+.form-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-out;
+    margin-top: 30px;
+}
+
+/* Анімація появи блоку форми */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); 
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}

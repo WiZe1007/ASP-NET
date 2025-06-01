@@ -1,0 +1,22 @@
+﻿@model List<Task_2.Models.Message>
+@{
+    ViewData["Title"] = "Sent Messages";
+}
+<div class="form-card animate__animated animate__fadeIn">
+    <h2>Надіслані повідомлення</h2>
+    @if (!Model.Any())
+    {
+            <p>Ви ще не надсилали жодного повідомлення.</p>
+    }
+    else
+    {
+            <ul class="list-group">
+            @foreach (var m in Model)
+            {
+                        <li class="list-group-item">
+                            <strong>@m.SentAt.ToString("g")</strong> до <strong>@m.To</strong> — @m.Theme
+                        </li>
+            }
+            </ul>
+    }
+</div>

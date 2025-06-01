@@ -1,0 +1,1333 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nemof\\source\\repos\\Lab_1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\controllers\\page1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\controllers\\page1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\controllers\\page5controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\controllers\\page5controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\views\\page3\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\views\\page3\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\controllers\\page4controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\controllers\\page4controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\controllers\\page3controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\controllers\\page3controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\controllers\\page2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\controllers\\page2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\views\\page5\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\views\\page5\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\views\\page4\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\views\\page4\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\views\\page2\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\views\\page2\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\views\\page1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\views\\page1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{845A5C48-C3B8-4DC1-9220-4B2A0D137B6D}|Task_5\\Task_5.csproj|solutionrelative:task_5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\controllers\\page5controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\controllers\\page5controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\controllers\\page4controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\controllers\\page4controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\controllers\\page3controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\controllers\\page3controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\controllers\\page2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\controllers\\page2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\controllers\\page1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\controllers\\page1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\views\\page5\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\views\\page5\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\views\\page4\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\views\\page4\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\views\\page3\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\views\\page3\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\views\\page2\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\views\\page2\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\views\\page1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\views\\page1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C656684A-9B6C-4F25-B3DC-3915897E237A}|Task_4\\Task_4.csproj|solutionrelative:task_4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|solutionrelative:task_3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_3\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|solutionrelative:task_3\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_3\\models\\columncount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|solutionrelative:task_3\\models\\columncount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_3\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|solutionrelative:task_3\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_3\\views\\home\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|solutionrelative:task_3\\views\\home\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_3\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|solutionrelative:task_3\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_3\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|solutionrelative:task_3\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|solutionrelative:task_3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|solutionrelative:task_3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CE1B7C3-F2C3-421A-B87F-90A5A1A21EF8}|Task_3\\Task_3.csproj|solutionrelative:task_3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|solutionrelative:task_2_2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_2\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|solutionrelative:task_2_2\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_2\\models\\imagedimension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|solutionrelative:task_2_2\\models\\imagedimension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_2\\views\\home\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|solutionrelative:task_2_2\\views\\home\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|solutionrelative:task_2_2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_2\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|solutionrelative:task_2_2\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|solutionrelative:task_2_2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|solutionrelative:task_2_2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17822813-92FF-4179-A46D-5241386DACCB}|Task_2_2\\Task_2_2.csproj|solutionrelative:task_2_2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|solutionrelative:task_2_1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|solutionrelative:task_2_1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_1\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|solutionrelative:task_2_1\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_1\\models\\imagedimension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|solutionrelative:task_2_1\\models\\imagedimension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_1\\views\\home\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|solutionrelative:task_2_1\\views\\home\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|solutionrelative:task_2_1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|solutionrelative:task_2_1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|solutionrelative:task_2_1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_2_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E41D091-317E-4101-A2C2-D29923EAD8C2}|Task_2_1\\Task_2_1.csproj|solutionrelative:task_2_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|solutionrelative:task_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|solutionrelative:task_1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|solutionrelative:task_1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_1\\models\\paragraphstyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|solutionrelative:task_1\\models\\paragraphstyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_1\\views\\home\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|solutionrelative:task_1\\views\\home\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|solutionrelative:task_1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_1\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|solutionrelative:task_1\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|solutionrelative:task_1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_1\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|solutionrelative:task_1\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_1\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|solutionrelative:task_1\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|solutionrelative:task_1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|solutionrelative:task_1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|solutionrelative:task_1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nemof\\source\\repos\\Lab_1\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_1\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|solutionrelative:task_1\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Task2_2Db/True/SqlTable/dbo.ImageDimensions.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Task2_1Db/True/SqlTable/dbo.ImageDimensions.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nemof\\AppData\\Local\\Temp\\lrqlxbcb..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Task1Db/True/SqlTable/dbo.ParagraphStyles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nemof\\AppData\\Local\\Temp\\k3d3azuy..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_1\\task_1\\dbscript.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{8E0A63F7-951B-4155-BD93-84A3896ED55D}|Task_1\\Task_1.csproj|solutionrelative:task_1\\dbscript.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Task_5\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Task_5\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T22:40:40.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Page5Controller.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Controllers\\Page5Controller.cs",
+              "RelativeDocumentMoniker": "Task_5\\Controllers\\Page5Controller.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Controllers\\Page5Controller.cs",
+              "RelativeToolTip": "Task_5\\Controllers\\Page5Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:57:20.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Page1Controller.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Controllers\\Page1Controller.cs",
+              "RelativeDocumentMoniker": "Task_5\\Controllers\\Page1Controller.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Controllers\\Page1Controller.cs",
+              "RelativeToolTip": "Task_5\\Controllers\\Page1Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:55:47.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Task_5\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Task_5\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:55:38.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Task_5\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Task_5\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:55:30.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Page5\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_5\\Views\\Page5\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Page5\\Index.cshtml",
+              "RelativeToolTip": "Task_5\\Views\\Page5\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:55:16.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Task_5\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Task_5\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:52:03.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Page2Controller.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Controllers\\Page2Controller.cs",
+              "RelativeDocumentMoniker": "Task_5\\Controllers\\Page2Controller.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Controllers\\Page2Controller.cs",
+              "RelativeToolTip": "Task_5\\Controllers\\Page2Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:56:55.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Page3\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_5\\Views\\Page3\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Page3\\Index.cshtml",
+              "RelativeToolTip": "Task_5\\Views\\Page3\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:55:00.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Page3Controller.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Controllers\\Page3Controller.cs",
+              "RelativeDocumentMoniker": "Task_5\\Controllers\\Page3Controller.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Controllers\\Page3Controller.cs",
+              "RelativeToolTip": "Task_5\\Controllers\\Page3Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:57:08.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Page4Controller.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Controllers\\Page4Controller.cs",
+              "RelativeDocumentMoniker": "Task_5\\Controllers\\Page4Controller.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Controllers\\Page4Controller.cs",
+              "RelativeToolTip": "Task_5\\Controllers\\Page4Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:57:14.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Page4\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_5\\Views\\Page4\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Page4\\Index.cshtml",
+              "RelativeToolTip": "Task_5\\Views\\Page4\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:55:08.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Page2\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_5\\Views\\Page2\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Page2\\Index.cshtml",
+              "RelativeToolTip": "Task_5\\Views\\Page2\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:54:47.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Page1\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_5\\Views\\Page1\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Page1\\Index.cshtml",
+              "RelativeToolTip": "Task_5\\Views\\Page1\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:54:38.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_5\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Task_5\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:52:49.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Task_5\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Task_5\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-05T19:52:28.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\appsettings.json",
+              "RelativeDocumentMoniker": "Task_5\\appsettings.json",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\appsettings.json",
+              "RelativeToolTip": "Task_5\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-05T19:51:46.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Program.cs",
+              "RelativeDocumentMoniker": "Task_5\\Program.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_5\\Program.cs",
+              "RelativeToolTip": "Task_5\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:51:34.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Page5Controller.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Controllers\\Page5Controller.cs",
+              "RelativeDocumentMoniker": "Task_4\\Controllers\\Page5Controller.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Controllers\\Page5Controller.cs",
+              "RelativeToolTip": "Task_4\\Controllers\\Page5Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:48:52.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Page4Controller.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Controllers\\Page4Controller.cs",
+              "RelativeDocumentMoniker": "Task_4\\Controllers\\Page4Controller.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Controllers\\Page4Controller.cs",
+              "RelativeToolTip": "Task_4\\Controllers\\Page4Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:48:45.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Page3Controller.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Controllers\\Page3Controller.cs",
+              "RelativeDocumentMoniker": "Task_4\\Controllers\\Page3Controller.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Controllers\\Page3Controller.cs",
+              "RelativeToolTip": "Task_4\\Controllers\\Page3Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:48:37.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Page2Controller.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Controllers\\Page2Controller.cs",
+              "RelativeDocumentMoniker": "Task_4\\Controllers\\Page2Controller.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Controllers\\Page2Controller.cs",
+              "RelativeToolTip": "Task_4\\Controllers\\Page2Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:48:27.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Task_4\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Task_4\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:45:33.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Page1Controller.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Controllers\\Page1Controller.cs",
+              "RelativeDocumentMoniker": "Task_4\\Controllers\\Page1Controller.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Controllers\\Page1Controller.cs",
+              "RelativeToolTip": "Task_4\\Controllers\\Page1Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:45:46.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Task_4\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Task_4\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:45:29.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Views\\Page5\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_4\\Views\\Page5\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Views\\Page5\\Index.cshtml",
+              "RelativeToolTip": "Task_4\\Views\\Page5\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:43:55.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Views\\Page4\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_4\\Views\\Page4\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Views\\Page4\\Index.cshtml",
+              "RelativeToolTip": "Task_4\\Views\\Page4\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:44:54.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Views\\Page3\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_4\\Views\\Page3\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Views\\Page3\\Index.cshtml",
+              "RelativeToolTip": "Task_4\\Views\\Page3\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:44:45.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Views\\Page2\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_4\\Views\\Page2\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Views\\Page2\\Index.cshtml",
+              "RelativeToolTip": "Task_4\\Views\\Page2\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:44:32.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Views\\Page1\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_4\\Views\\Page1\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Views\\Page1\\Index.cshtml",
+              "RelativeToolTip": "Task_4\\Views\\Page1\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:42:26.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Task_4\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Task_4\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-05T19:36:35.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Task_4\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Task_4\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAiwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:36:16.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\appsettings.json",
+              "RelativeDocumentMoniker": "Task_4\\appsettings.json",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\appsettings.json",
+              "RelativeToolTip": "Task_4\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-05T19:34:18.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Program.cs",
+              "RelativeDocumentMoniker": "Task_4\\Program.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_4\\Program.cs",
+              "RelativeToolTip": "Task_4\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:33:58.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Task_3\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Task_3\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAiwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:30:41.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Task_3\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Task_3\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:30:32.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Task_3\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Task_3\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:29:57.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ColumnCount.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Models\\ColumnCount.cs",
+              "RelativeDocumentMoniker": "Task_3\\Models\\ColumnCount.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Models\\ColumnCount.cs",
+              "RelativeToolTip": "Task_3\\Models\\ColumnCount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:29:31.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Display.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Views\\Home\\Display.cshtml",
+              "RelativeDocumentMoniker": "Task_3\\Views\\Home\\Display.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Views\\Home\\Display.cshtml",
+              "RelativeToolTip": "Task_3\\Views\\Home\\Display.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:29:01.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_3\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Task_3\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:28:50.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Task_3\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Task_3\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-05T19:28:36.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Task_3\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Task_3\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:28:23.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\appsettings.json",
+              "RelativeDocumentMoniker": "Task_3\\appsettings.json",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\appsettings.json",
+              "RelativeToolTip": "Task_3\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-05T19:28:13.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Program.cs",
+              "RelativeDocumentMoniker": "Task_3\\Program.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_3\\Program.cs",
+              "RelativeToolTip": "Task_3\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:27:53.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Task_2_2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Task_2_2\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAiwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:19:09.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Task_2_2\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Task_2_2\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:18:42.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ImageDimension.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Models\\ImageDimension.cs",
+              "RelativeDocumentMoniker": "Task_2_2\\Models\\ImageDimension.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Models\\ImageDimension.cs",
+              "RelativeToolTip": "Task_2_2\\Models\\ImageDimension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:18:13.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Display.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Views\\Home\\Display.cshtml",
+              "RelativeDocumentMoniker": "Task_2_2\\Views\\Home\\Display.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Views\\Home\\Display.cshtml",
+              "RelativeToolTip": "Task_2_2\\Views\\Home\\Display.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwA4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:17:46.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_2_2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Task_2_2\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:17:21.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Task_2_2\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Task_2_2\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-05T19:17:07.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Task_2_2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Task_2_2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:16:53.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\appsettings.json",
+              "RelativeDocumentMoniker": "Task_2_2\\appsettings.json",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\appsettings.json",
+              "RelativeToolTip": "Task_2_2\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-05T19:16:44.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Program.cs",
+              "RelativeDocumentMoniker": "Task_2_2\\Program.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_2\\Program.cs",
+              "RelativeToolTip": "Task_2_2\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T19:16:34.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Task_2_1\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Task_2_1\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-05T19:07:40.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_2_1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Task_2_1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwB0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T10:01:43.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Display.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Views\\Home\\Display.cshtml",
+              "RelativeDocumentMoniker": "Task_2_1\\Views\\Home\\Display.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Views\\Home\\Display.cshtml",
+              "RelativeToolTip": "Task_2_1\\Views\\Home\\Display.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T10:02:06.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Task_2_1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Task_2_1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAiwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T10:00:45.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Task_2_1\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Task_2_1\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T09:58:11.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Task_2_1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Task_2_1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAiwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T19:05:12.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\appsettings.json",
+              "RelativeDocumentMoniker": "Task_2_1\\appsettings.json",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\appsettings.json",
+              "RelativeToolTip": "Task_2_1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-04T09:56:31.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Program.cs",
+              "RelativeDocumentMoniker": "Task_2_1\\Program.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Program.cs",
+              "RelativeToolTip": "Task_2_1\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T09:58:31.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "ImageDimension.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Models\\ImageDimension.cs",
+              "RelativeDocumentMoniker": "Task_2_1\\Models\\ImageDimension.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_2_1\\Models\\ImageDimension.cs",
+              "RelativeToolTip": "Task_2_1\\Models\\ImageDimension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T09:57:36.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Program.cs",
+              "RelativeDocumentMoniker": "Task_1\\Program.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Program.cs",
+              "RelativeToolTip": "Task_1\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T08:09:43.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Task_1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Task_1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAiwFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T08:39:40.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Task_1\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Task_1\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T08:07:56.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "ParagraphStyle.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Models\\ParagraphStyle.cs",
+              "RelativeDocumentMoniker": "Task_1\\Models\\ParagraphStyle.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Models\\ParagraphStyle.cs",
+              "RelativeToolTip": "Task_1\\Models\\ParagraphStyle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T08:07:06.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "Display.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\Home\\Display.cshtml",
+              "RelativeDocumentMoniker": "Task_1\\Views\\Home\\Display.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\Home\\Display.cshtml",
+              "RelativeToolTip": "Task_1\\Views\\Home\\Display.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAiwFwAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T08:40:57.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Task_1\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAiwHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-04T08:40:22.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Task_1\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Task_1\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAABUAAAAAAAAAAAAUwCkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-05T18:45:46.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Task_1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Task_1\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T18:45:18.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Task_1\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Task_1\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T18:45:18.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Task_1\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Task_1\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T13:30:32.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "SQLQuery1.sql",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\SQLQuery1.sql",
+              "RelativeDocumentMoniker": "SQLQuery1.sql",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\SQLQuery1.sql",
+              "RelativeToolTip": "SQLQuery1.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-05T18:40:25.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Task_1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Task_1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T13:47:36.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Task_1\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Task_1\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T13:30:34.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Task_1\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Task_1\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T13:30:31.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\appsettings.json",
+              "RelativeDocumentMoniker": "Task_1\\appsettings.json",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\appsettings.json",
+              "RelativeToolTip": "Task_1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-04T08:02:18.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "dbo.ImageDimensions.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Task2_2Db/True/SqlTable/dbo.ImageDimensions.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Task2_2Db/True/SqlTable/dbo.ImageDimensions.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-05T18:26:59.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "lrqlxbcb..sql",
+              "DocumentMoniker": "C:\\Users\\nemof\\AppData\\Local\\Temp\\lrqlxbcb..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\lrqlxbcb..sql",
+              "ToolTip": "C:\\Users\\nemof\\AppData\\Local\\Temp\\lrqlxbcb..sql",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\lrqlxbcb..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-04T10:09:28.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "dbo.ImageDimensions.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Task2_1Db/True/SqlTable/dbo.ImageDimensions.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Task2_1Db/True/SqlTable/dbo.ImageDimensions.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-04T10:10:05.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "dbo.ParagraphStyles.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Task1Db/True/SqlTable/dbo.ParagraphStyles.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Task1Db/True/SqlTable/dbo.ParagraphStyles.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-04T09:19:13.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "k3d3azuy..sql",
+              "DocumentMoniker": "C:\\Users\\nemof\\AppData\\Local\\Temp\\k3d3azuy..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\k3d3azuy..sql",
+              "ToolTip": "C:\\Users\\nemof\\AppData\\Local\\Temp\\k3d3azuy..sql",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\k3d3azuy..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-04T09:17:31.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "DBScript.sql",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\DBScript.sql",
+              "RelativeDocumentMoniker": "Task_1\\DBScript.sql",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_1\\Task_1\\DBScript.sql",
+              "RelativeToolTip": "Task_1\\DBScript.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-04T08:33:37.146Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

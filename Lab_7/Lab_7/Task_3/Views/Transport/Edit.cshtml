@@ -1,0 +1,44 @@
+﻿@model Task_3.Models.Transport
+
+@{
+    ViewData["Title"] = "Редагування запису";
+}
+
+<h1>Редагування запису</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <!-- 1) TransportType -->
+    <div class="mb-3">
+        <span asp-validation-for="TransportType" class="text-danger" style="display: block;"></span>
+        <label asp-for="TransportType" class="form-label">
+            Вид транспорту (Tr, Tl, A)
+        </label>
+        <input asp-for="TransportType" class="form-control" />
+    </div>
+
+    <!-- 2) RouteNumber -->
+    <div class="mb-3">
+        <span asp-validation-for="RouteNumber" class="text-danger" style="display: block;"></span>
+        <label asp-for="RouteNumber" class="form-label">Номер маршруту</label>
+        <input asp-for="RouteNumber" class="form-control" />
+    </div>
+
+    <!-- 3) RouteDistance -->
+    <div class="mb-3">
+        <label asp-for="RouteDistance" class="form-label">Протяжність маршруту (км)</label>
+        <input asp-for="RouteDistance" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="RouteDistance" class="text-danger" style="margin-left:10px;"></span>
+    </div>
+
+    <!-- 4) TravelTime -->
+    <div class="mb-3">
+        <label asp-for="TravelTime" class="form-label">Час в дорозі (хв)</label>
+        <input asp-for="TravelTime" class="form-control" type="number" />
+        <span asp-validation-for="TravelTime" class="text-danger" style="margin-left:10px;"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Зберегти зміни</button>
+    <a href="@Url.Action("Index", "Transport")" class="btn btn-secondary">Відмінити</a>
+</form>

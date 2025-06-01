@@ -1,0 +1,78 @@
+﻿@model List<Task_5.Models.TestAnswerViewModel>
+@{
+    ViewData["Title"] = "Проходження тесту";
+}
+
+<form asp-action="Take" method="post">
+    <div class="form-card animate__animated animate__fadeIn">
+        <h2>Питання</h2>
+        <span asp-validation-summary="ModelOnly" class="text-danger mb-3"></span>
+
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            var q = Model[i];
+            <div class="mb-4">
+                <input asp-for="@q.Id" type="hidden" name="[@i].Id" />
+                <input asp-for="@q.QuestionType" type="hidden" name="[@i].QuestionType" />
+                <input asp-for="@q.CorrectAnswers" type="hidden" name="[@i].CorrectAnswers" />
+
+                <p><strong>@(i + 1). @q.Text</strong></p>
+
+                @if (q.QuestionType == 'R')
+                {
+                    <div>
+                        <label>
+                            <input asp-for="@q.SelectedOption" name="[@i].SelectedOption" type="radio" value="A" />
+                            @q.OptionA
+                        </label><br />
+                        <label>
+                            <input asp-for="@q.SelectedOption" name="[@i].SelectedOption" type="radio" value="B" />
+                            @q.OptionB
+                        </label><br />
+                        <label>
+                            <input asp-for="@q.SelectedOption" name="[@i].SelectedOption" type="radio" value="C" />
+                            @q.OptionC
+                        </label><br />
+                        <label>
+                            <input asp-for="@q.SelectedOption" name="[@i].SelectedOption" type="radio" value="D" />
+                            @q.OptionD
+                        </label>
+                    </div>
+                }
+                else if (q.QuestionType == 'C')
+                {
+                    <div>
+                        <label>
+                            <input type="checkbox" name="[@i].SelectedOptions" value="A" />
+                            @q.OptionA
+                        </label><br />
+                        <label>
+                            <input type="checkbox" name="[@i].SelectedOptions" value="B" />
+                            @q.OptionB
+                        </label><br />
+                        <label>
+                            <input type="checkbox" name="[@i].SelectedOptions" value="C" />
+                            @q.OptionC
+                        </label><br />
+                        <label>
+                            <input type="checkbox" name="[@i].SelectedOptions" value="D" />
+                            @q.OptionD
+                        </label>
+                    </div>
+                }
+                else if (q.QuestionType == 'T')
+                {
+                    <div class="form-material mb-2">
+                        <input asp-for="@q.TextAnswer" name="[@i].TextAnswer" class="form-control" />
+                    </div>
+                }
+            </div>
+        }
+
+        <button type="submit" class="btn btn-success">Завершити</button>
+    </div>
+</form>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

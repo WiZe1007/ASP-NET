@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Динамічний заголовок, що формується на основі ViewData -->
+    <title>@ViewData["Title"] - Завдання 8 (Lab 5)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Підключення Bootstrap через CDN для швидкого налаштування зовнішнього вигляду -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <!-- Підключення власних стилів -->
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body class="@ViewBag.BodyClass">
+    <!-- Верхня навігаційна панель з брендом -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="@Url.Action("Index", "Search")">
+            Завдання 8 (Lab 5) – Пошук акаунту
+        </a>
+    </nav>
+    <!-- Основний контейнер для відображення вмісту сторінки -->
+    <main class="container">
+        @RenderBody()
+    </main>
+    <!-- Футер з інформацією про авторські права -->
+    <footer class="footer bg-dark text-white text-center p-3">
+        <div class="container">
+            &copy; 2025 Lab 5
+        </div>
+    </footer>
+    <!-- Підключення JavaScript для Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

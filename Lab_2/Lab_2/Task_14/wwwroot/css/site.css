@@ -1,0 +1,30 @@
+html {
+    font-size: 14px; /* Базовий розмір шрифту */
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px; /* Збільшуємо шрифт на широких екранах */
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    /* Фонова картинка для сторінки Task_14 */
+    background: url('https://static.independent.co.uk/2023/01/19/17/Petit%20Jean%20State%20Park%203%20-%20Credit%20James%20Norbury%20and%20Guy%20Davies.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Стиль для навігаційного бару */
+.custom-navbar {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}

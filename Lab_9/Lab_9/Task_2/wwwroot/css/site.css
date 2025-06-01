@@ -1,0 +1,83 @@
+/* фон сторінки */
+body {
+    background: url('https://images7.alphacoders.com/116/1162515.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* картка форми */
+.form-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+    .form-card h2 {
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+    }
+
+/* поля вводу */
+.form-material .form-control {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+    .form-material .form-control:focus {
+        outline: none;
+        border-bottom-color: #1abc9c;
+    }
+
+/* лейбли */
+.form-material label {
+    display: block;
+    color: #888;
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+}
+
+/* помилки */
+.error-message {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #e74c3c;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    animation: fade-in 0.4s;
+}
+
+/* кнопка */
+.btn-register {
+    width: 30%;
+    background-color: #1abc9c;
+    border: none;
+    padding: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+    .btn-register:hover {
+        background-color: #16a085;
+    }
+
+/* список повідомлень */
+.list-group-item {
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* анімація */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

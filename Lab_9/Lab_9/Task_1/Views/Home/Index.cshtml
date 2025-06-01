@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="animate__animated animate__fadeInDown">Вітаємо!</h1>
+    <p class="lead animate__animated animate__fadeInUp">
+        Ви успішно увійшли як <strong>@Context.Session.GetString("UserName")</strong>.
+    </p>
+</div>

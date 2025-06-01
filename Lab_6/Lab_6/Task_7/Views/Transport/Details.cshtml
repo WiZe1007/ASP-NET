@@ -1,0 +1,22 @@
+﻿@model Task_7.Models.Transport
+
+@{
+    ViewData["Title"] = "Деталі маршруту";
+    // Модель містить дані маршруту для перегляду
+}
+
+<div class="details-card">
+    <h2>Деталі маршруту</h2>
+
+    <p><strong>Id:</strong> @Model.Id</p>
+    <p><strong>Вид транспорту:</strong> @Model.VidTransportu</p>
+    <p><strong>Номер маршруту:</strong> @Model.NomMarshruta</p>
+    <p><strong>Протяжність (км):</strong> @Model.ProtjazhnistMarshruta</p>
+    <p><strong>Час в дорозі (хв):</strong> @Model.ChasVDorozi</p>
+
+    <hr />
+
+    <!-- Кнопки для повернення та редагування -->
+    <a class="btn btn-secondary" asp-action="Index">Назад</a>
+    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.Id">Редагувати</a>
+</div>

@@ -1,0 +1,30 @@
+﻿@model Task_7.Models.Transport
+
+@{
+    ViewData["Title"] = "Видалити маршрут";
+    // Модель містить дані маршруту для підтвердження видалення
+}
+
+<h1>Видалення маршруту</h1>
+
+<div>
+    <h4>Ви дійсно бажаєте видалити цей маршрут?</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Id</dt>
+        <dd>@Model.Id</dd>
+        <dt>Вид транспорту</dt>
+        <dd>@Model.VidTransportu</dd>
+        <dt>Номер маршруту</dt>
+        <dd>@Model.NomMarshruta</dd>
+        <dt>Протяжність (км)</dt>
+        <dd>@Model.ProtjazhnistMarshruta</dd>
+        <dt>Час в дорозі (хв)</dt>
+        <dd>@Model.ChasVDorozi</dd>
+    </dl>
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Видалити</button>
+        <a asp-action="Index" class="btn btn-secondary">Назад</a>
+    </form>
+</div>

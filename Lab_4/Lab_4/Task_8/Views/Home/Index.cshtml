@@ -1,0 +1,99 @@
+﻿@model List<Task_8.Models.Employee>
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    // Вказуємо розташування макета
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    // Заголовок сторінки
+    ViewData["Title"] = "Employees Table";
+
+    // Значення за замовчуванням для фільтра
+    string evenOddChoice = "All";
+
+    // Якщо форма відправлена методом POST, беремо значення фільтра з форми
+    if (HttpContextAccessor.HttpContext?.Request.Method == "POST" &&
+        HttpContextAccessor.HttpContext?.Request.HasFormContentType == true)
+    {
+        evenOddChoice = HttpContextAccessor.HttpContext.Request.Form["EvenOdd"];
+        if (string.IsNullOrEmpty(evenOddChoice))
+        {
+            evenOddChoice = "All";
+        }
+    }
+}
+
+<div class="container my-4">
+    <!-- Заголовок списку працівників -->
+    <h2 class="text-center mb-4 text-white">Список працівників</h2>
+
+    <!-- Форма для вибору фільтра по ідентифікаторах -->
+    <form method="post" class="mb-4">
+        <div class="mb-3">
+            <!-- Лейбл для вибору -->
+            <label class="form-label text-white">Виберіть ідентифікатори:</label>
+            <div>
+                <!-- Радіо кнопка для всіх працівників -->
+                <input type="radio" name="EvenOdd" value="All" id="all"
+                @(evenOddChoice == "All" ? "checked" : "") />
+                <label for="all" class="text-white">Всі</label>
+
+                <!-- Радіо кнопка для парних ID -->
+                <input type="radio" name="EvenOdd" value="Even" id="even"
+                @(evenOddChoice == "Even" ? "checked" : "") />
+                <label for="even" class="text-white">Парні</label>
+
+                <!-- Радіо кнопка для непарних ID -->
+                <input type="radio" name="EvenOdd" value="Odd" id="odd"
+                @(evenOddChoice == "Odd" ? "checked" : "") />
+                <label for="odd" class="text-white">Непарні</label>
+            </div>
+        </div>
+        <!-- Кнопка для застосування фільтра -->
+        <button type="submit" class="btn btn-primary">Застосувати</button>
+    </form>
+
+    <!-- Таблиця для виводу списку працівників -->
+    <table class="table table-bordered table-striped custom-table">
+        <thead class="table-light">
+            <tr>
+                <th>e_id</th>
+                <th>e_name</th>
+                <th>e_salary</th>
+                <th>e_age</th>
+                <th>e_gender</th>
+                <th>e_dept</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var emp in Model)
+            {
+                // За замовчуванням показуємо рядок
+                bool showRow = true;
+
+                // Якщо обрано "Парні", показуємо лише ті рядки, де e_id парний
+                if (evenOddChoice == "Even")
+                {
+                    showRow = (emp.e_id % 2 == 0);
+                }
+                // Якщо обрано "Непарні", показуємо лише ті рядки, де e_id непарний
+                else if (evenOddChoice == "Odd")
+                {
+                    showRow = (emp.e_id % 2 != 0);
+                }
+
+                // Виводимо рядок, якщо умова виконується
+                if (showRow)
+                {
+                    <tr>
+                        <td>@emp.e_id</td>
+                        <td>@emp.e_name</td>
+                        <td>@emp.e_salary</td>
+                        <td>@emp.e_age</td>
+                        <td>@emp.e_gender</td>
+                        <td>@emp.e_dept</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

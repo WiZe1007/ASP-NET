@@ -1,0 +1,52 @@
+﻿@{
+    // Використовуємо стандартний макет сторінки
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    // Отримуємо поточний етап заповнення форми з ViewBag
+    int step = ViewBag.Step;
+    // Заголовок, який відображатиметься на формі (наприклад, "Введіть пароль")
+    string title = ViewBag.Title;
+    // Текст підказки для поля вводу (наприклад, "Пароль:")
+    string prompt = ViewBag.Prompt;
+    // Повідомлення про успіх (якщо реєстрація вже завершена)
+    string success = ViewBag.Success as string;
+    // Повідомлення про помилку (якщо сталася якась помилка)
+    string error = ViewBag.Error as string;
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="form-box">
+            @if (!string.IsNullOrEmpty(success))
+            {
+                <!-- Якщо реєстрація успішна, показуємо повідомлення і кнопку для нової реєстрації -->
+                <div class="alert alert-success text-center">
+                    @success
+                </div>
+                <a href="@Url.Action("Index", "Registration", new { reset = true })" class="btn btn-primary btn-block">
+                    Нова реєстрація
+                </a>
+            }
+            else
+            {
+                <!-- Виводимо заголовок для поточного етапу -->
+                <h2 class="text-center">@title</h2>
+                @if (!string.IsNullOrEmpty(error))
+                {
+                    <!-- Якщо є помилка, відображаємо її тут -->
+                    <div class="alert alert-danger">
+                        @error
+                    </div>
+                }
+                <!-- Форма вводу даних для поточного етапу -->
+                <form asp-action="Index" method="post">
+                    <div class="form-group">
+                        <label for="input">@prompt</label>
+                        <input type="text" class="form-control" id="input" name="input" placeholder="@prompt" required />
+                    </div>
+                    <!-- Кнопка для відправлення форми і переходу до наступного етапу -->
+                    <button type="submit" class="btn btn-primary btn-block">Далі</button>
+                </form>
+            }
+        </div>
+    </div>
+</div>

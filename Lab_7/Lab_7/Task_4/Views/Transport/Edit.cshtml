@@ -1,0 +1,49 @@
+﻿@model Task_4.Models.Transport
+
+@{
+    ViewData["Title"] = "Редагувати маршрут";
+}
+
+<h1>Редагувати маршрут</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <!-- 1) Вид транспорту -->
+    <div class="mb-3">
+        <span asp-validation-for="VidTransportu" class="text-danger" style="display:block;"></span>
+        <label class="form-label">Вид транспорту (Tr, Tl, A)</label>
+        <input asp-for="VidTransportu" class="form-control" />
+    </div>
+
+    <!-- 2) Номер маршруту -->
+    <div class="mb-3">
+        <span asp-validation-for="NomMarshruta" class="text-danger" style="display:block;"></span>
+        <label class="form-label">Номер маршруту</label>
+        <input asp-for="NomMarshruta" class="form-control" />
+    </div>
+
+    <!-- 3) Протяжність -->
+    <div class="mb-3">
+        <label class="form-label">Протяжність (км)</label>
+        <input asp-for="ProtjazhnistMarshruta" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="ProtjazhnistMarshruta" class="text-danger" style="margin-left:10px;"></span>
+    </div>
+
+    <!-- 4) Час в дорозі -->
+    <div class="mb-3">
+        <label class="form-label">Час в дорозі (хв)</label>
+        <input asp-for="ChasVDorozi" class="form-control" type="number" />
+        <span asp-validation-for="ChasVDorozi" class="text-danger" style="margin-left:10px;"></span>
+    </div>
+
+    <!-- 5) Кількість зупинок -->
+    <div class="mb-3">
+        <label class="form-label">Кількість зупинок</label>
+        <input asp-for="KilkistZupynok" class="form-control" type="number" />
+        <span asp-validation-for="KilkistZupynok" class="text-danger" style="margin-left:10px;"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Зберегти</button>
+    <a asp-action="Index" class="btn btn-secondary">Назад</a>
+</form>

@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    // Безпечне приведення ViewBag.Stage до int із значенням за замовчуванням 1
+    int stage = ViewBag.Stage != null ? (int)ViewBag.Stage : 1;
+    // Заголовок форми. Якщо нічого не задано – виводимо стандартний текст
+    string title = ViewBag.Title ?? "Введіть дані для пошуку";
+    // Підказка для поля вводу (наприклад, "Пароль:" або "Email:")
+    string prompt = ViewBag.Prompt ?? "";
+    // Отримуємо повідомлення про помилку, якщо вона є
+    string error = ViewBag.Error as string;
+    // Для етапу 3 результати пошуку передаються через ViewBag.SearchResults як List<Account>
+    var searchResults = ViewBag.SearchResults as List<Task_9.Controllers.Account>;
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="form-box">
+            <!-- Виводимо заголовок форми -->
+            <h2 class="text-center">@title</h2>
+            @if (!string.IsNullOrEmpty(error))
+            {
+                <!-- Якщо виникла помилка, показуємо її користувачу -->
+                <div class="alert alert-danger">@error</div>
+            }
+            @if (stage == 3)
+            {
+                <!-- Етап 3: відображення результатів пошуку -->
+                @if (searchResults == null || searchResults.Count == 0)
+                {
+                    <!-- Якщо пошук не дав результатів, виводимо попередження -->
+                    <div class="alert alert-warning">Акаунт не знайдено.</div>
+                }
+                else
+                {
+                    <!-- Вивід результатів пошуку у вигляді таблиці -->
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>ID</th>
+                            <th>Пароль</th>
+                            <th>Email</th>
+                            <th>Дата створення</th>
+                        </tr>
+                        @foreach (var acc in searchResults)
+                        {
+                            <tr>
+                                <td>@acc.Id</td>
+                                <td>@acc.Password</td>
+                                <td>@acc.Email</td>
+                                <td>@acc.CreatedAt</td>
+                            </tr>
+                        }
+                    </table>
+                }
+                <!-- Кнопка для запуску нового пошукового запиту -->
+                <a href="@Url.Action("Index", "Search", new { reset = true })" class="btn btn-primary">Нова пошукова операція</a>
+            }
+            else
+            {
+                <!-- Якщо не етап відображення результатів – показуємо форму вводу -->
+                <form asp-action="Index" method="post">
+                    <div class="form-group">
+                        <label for="input">@prompt</label>
+                        <input type="text" id="input" name="input" class="form-control" placeholder="@prompt" required />
+                    </div>
+                    <!-- Кнопка для відправлення форми -->
+                    <button type="submit" class="btn btn-primary btn-block">Далі</button>
+                </form>
+            }
+        </div>
+    </div>
+</div>

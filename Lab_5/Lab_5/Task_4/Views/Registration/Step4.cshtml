@@ -1,0 +1,32 @@
+﻿@{
+    // Використовуємо основний макет
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    // Заголовок сторінки для введення логіну
+    ViewData["Title"] = "Введення логіну";
+    // Фон для цього кроку – bg4
+    ViewBag.BodyClass = "bg4";
+    // Отримуємо можливу помилку з TempData (якщо щось пішло не так)
+    var error = TempData["Error"] as string;
+}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="form-box">
+            <!-- Заголовок для вводу логіну -->
+            <h2 class="text-center">Введіть логін</h2>
+            @if (!string.IsNullOrEmpty(error))
+            {
+                <!-- Виводимо повідомлення про помилку, якщо є -->
+                <div class="alert alert-danger">@error</div>
+            }
+            <form asp-action="Step4" method="post">
+                <div class="form-group">
+                    <!-- Поле введення логіну -->
+                    <label for="login">Логін:</label>
+                    <input type="text" class="form-control" id="login" name="login" placeholder="Введіть логін" required />
+                </div>
+                <!-- Кнопка для завершення реєстрації -->
+                <button type="submit" class="btn btn-primary btn-block">Зареєструвати</button>
+            </form>
+        </div>
+    </div>
+</div>

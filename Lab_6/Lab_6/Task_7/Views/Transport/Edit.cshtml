@@ -1,0 +1,31 @@
+﻿@model Task_7.Models.Transport
+
+@{
+    ViewData["Title"] = "Редагувати маршрут";
+    // Модель містить дані маршруту для редагування
+}
+
+<h1>Редагувати маршрут</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="VidTransportu">Вид транспорту</label>
+        <input asp-for="VidTransportu" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="NomMarshruta">Номер маршруту</label>
+        <input asp-for="NomMarshruta" class="form-control" type="number" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ProtjazhnistMarshruta">Протяжність (км)</label>
+        <input asp-for="ProtjazhnistMarshruta" class="form-control" type="number" step="0.01" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ChasVDorozi">Час в дорозі (хв)</label>
+        <input asp-for="ChasVDorozi" class="form-control" type="number" />
+    </div>
+    <button type="submit" class="btn btn-primary">Зберегти</button>
+    <!-- Кнопка повернення до списку -->
+    <a asp-action="Index" class="btn btn-secondary">Назад</a>
+</form>

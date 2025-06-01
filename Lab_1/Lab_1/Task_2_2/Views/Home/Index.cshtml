@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Головна (Task_2_2)";
+}
+
+<div class="container my-4">
+    <h2 class="mb-4">Форма для 3 зображень (Варіант із іншою топологією)</h2>
+    <p class="mb-4">URL зображень задаються у формі, а розміри - з БД.</p>
+
+    <form method="post" asp-action="IndexPost" asp-controller="Home">
+        <div class="row g-3">
+            <div class="col-md-4">
+                <label class="form-label">Зобр1 (URL):</label>
+                <input type="text" name="image1Url" class="form-control" placeholder="https://site.com/img1.jpg" />
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Зобр2 (URL):</label>
+                <input type="text" name="image2Url" class="form-control" placeholder="https://site.com/img2.jpg" />
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Зобр3 (URL):</label>
+                <input type="text" name="image3Url" class="form-control" placeholder="https://site.com/img3.jpg" />
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <button type="submit" class="btn btn-primary">Показати</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nemof\\source\\repos\\Lab_9\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{295CC2DC-CA30-477B-95F4-2096B5D1215C}|Task_6\\Task_6.csproj|c:\\users\\nemof\\source\\repos\\lab_9\\task_6\\app_data\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{295CC2DC-CA30-477B-95F4-2096B5D1215C}|Task_6\\Task_6.csproj|solutionrelative:task_6\\app_data\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{295CC2DC-CA30-477B-95F4-2096B5D1215C}|Task_6\\Task_6.csproj|c:\\users\\nemof\\source\\repos\\lab_9\\task_6\\app_data\\messages.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{295CC2DC-CA30-477B-95F4-2096B5D1215C}|Task_6\\Task_6.csproj|solutionrelative:task_6\\app_data\\messages.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB06CD3-20A0-4DFE-98F4-24E7D5DD9789}|Task_2\\Task_2.csproj|c:\\users\\nemof\\source\\repos\\lab_9\\task_2\\app_data\\messages.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1AB06CD3-20A0-4DFE-98F4-24E7D5DD9789}|Task_2\\Task_2.csproj|solutionrelative:task_2\\app_data\\messages.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "messages.json",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_9\\Task_2\\App_Data\\messages.json",
+              "RelativeDocumentMoniker": "Task_2\\App_Data\\messages.json",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_9\\Task_2\\App_Data\\messages.json",
+              "RelativeToolTip": "Task_2\\App_Data\\messages.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-02T20:41:46.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "users.json",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_9\\Task_6\\App_Data\\users.json",
+              "RelativeDocumentMoniker": "Task_6\\App_Data\\users.json",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_9\\Task_6\\App_Data\\users.json",
+              "RelativeToolTip": "Task_6\\App_Data\\users.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-02T20:09:53.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "messages.json",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_9\\Task_6\\App_Data\\messages.json",
+              "RelativeDocumentMoniker": "Task_6\\App_Data\\messages.json",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_9\\Task_6\\App_Data\\messages.json",
+              "RelativeToolTip": "Task_6\\App_Data\\messages.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-02T20:09:54.393Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

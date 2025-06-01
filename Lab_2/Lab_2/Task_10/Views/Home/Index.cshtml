@@ -1,0 +1,202 @@
+﻿@{
+    Layout = "_Layout"; // Використовуємо спільний Layout
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Завдання 10 (Варіант №12)</title>
+    <style>
+        /* Стилі для контейнера форми */
+        .form-container {
+            position: relative;
+            width: 600px; /* Ширина форми */
+            height: 300px; /* Висота форми */
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+        /* Заголовок форми */
+        .interestsTitle {
+            position: absolute;
+            left: 150px;
+            top: 20px;
+            font-weight: bold;
+            font-size: 1.5em;
+            color: #333;
+        }
+        /* Стилі для напису та чекбоксу "Спорт" */
+        .interestSportLabel {
+            position: absolute;
+            left: 240px;
+            top: 60px;
+            font-size: 1.2em;
+            color: #444;
+        }
+
+        .interestSportCheck {
+            position: absolute;
+            left: 320px;
+            top: 60px;
+        }
+        /* Стилі для "Мандрівки" */
+        .interestTravelLabel {
+            position: absolute;
+            left: 140px;
+            top: 100px;
+            font-size: 1.2em;
+            color: #444;
+        }
+
+        .interestTravelCheck {
+            position: absolute;
+            left: 278px;
+            top: 100px;
+        }
+        /* Стилі для "Майстрування" */
+        .interestCraftLabel {
+            position: absolute;
+            left: 83px;
+            top: 140px;
+            font-size: 1.2em;
+            color: #444;
+        }
+
+        .interestCraftCheck {
+            position: absolute;
+            left: 278px;
+            top: 140px;
+        }
+        /* Стилі для "Малювання" */
+        .interestDrawLabel {
+            position: absolute;
+            left: 135px;
+            top: 180px;
+            font-size: 1.2em;
+            color: #444;
+        }
+
+        .interestDrawCheck {
+            position: absolute;
+            left: 320px;
+            top: 180px;
+        }
+        /* Стилі для кнопок */
+        .chooseButton, .cancelButton {
+            position: absolute;
+            top: 220px;
+        }
+
+        .chooseButton {
+            left: 170px;
+        }
+
+        .cancelButton {
+            left: 260px;
+        }
+
+            .chooseButton button, .cancelButton button {
+                padding: 8px 16px;
+                font-size: 1em;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: #258cfb;
+                color: #fff;
+                transition: background-color 0.3s;
+            }
+
+            .cancelButton button {
+                padding: 8px 16px;
+                font-size: 1em;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: red;
+                color: #fff;
+                transition: background-color 0.3s;
+            }
+
+                .chooseButton button:hover, .cancelButton button:hover {
+                    background-color: #1a6fb3;
+                }
+        /* Стилізація чекбоксів */
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+        /* Стилі для виведення результатів */
+        .result-header,
+        .result-content {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Форма з абсолютним позиціонуванням елементів -->
+    <form method="post" asp-action="Index" asp-controller="Home" class="form-container">
+        <div class="interestsTitle">Виберіть ваші інтереси:</div>
+
+        <!-- Чекбокс для "Спорт" -->
+        <div class="interestSportLabel">Спорт</div>
+        <div class="interestSportCheck">
+            <input type="checkbox" name="Interests" value="Спорт"
+            @(((List<string>)ViewBag.SelectedInterests).Contains("Спорт") ? "checked" : "") />
+        </div>
+
+        <!-- Чекбокс для "Мандрівки" -->
+        <div class="interestTravelLabel">Мандрівки</div>
+        <div class="interestTravelCheck">
+            <input type="checkbox" name="Interests" value="Мандрівки"
+            @(((List<string>)ViewBag.SelectedInterests).Contains("Мандрівки") ? "checked" : "") />
+        </div>
+
+        <!-- Чекбокс для "Майстрування" -->
+        <div class="interestCraftLabel">Майстрування</div>
+        <div class="interestCraftCheck">
+            <input type="checkbox" name="Interests" value="Майстрування"
+            @(((List<string>)ViewBag.SelectedInterests).Contains("Майстрування") ? "checked" : "") />
+        </div>
+
+        <!-- Чекбокс для "Малювання" -->
+        <div class="interestDrawLabel">Малювання</div>
+        <div class="interestDrawCheck">
+            <input type="checkbox" name="Interests" value="Малювання"
+            @(((List<string>)ViewBag.SelectedInterests).Contains("Малювання") ? "checked" : "") />
+        </div>
+
+        <!-- Кнопки для дій -->
+        <div class="chooseButton">
+            <button type="submit" name="action" value="choose">Вибрати</button>
+        </div>
+        <div class="cancelButton">
+            <button type="submit" name="action" value="cancel">Відмовитися</button>
+        </div>
+    </form>
+
+    @if (ViewBag.ShowResult == true)
+    {
+        <hr />
+        <h3 class="result-header">Обрані інтереси:</h3>
+        // Отримуємо список вибраних інтересів із ViewBag
+        var selected = (List<string>)ViewBag.SelectedInterests;
+        if (selected.Count > 0)
+        {
+            <ul class="result-content">
+                @foreach (var interest in selected)
+                {
+                    <li>@interest</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p class="result-content">Нічого не обрано.</p>
+        }
+    }
+</body>
+</html>

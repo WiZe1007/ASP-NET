@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nemof\\source\\repos\\Lab_10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A9D7A44F-6120-4059-B548-DDC1008BB527}|Task_6\\Task_6.csproj|c:\\users\\nemof\\source\\repos\\lab_10\\task_6\\app_data\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A9D7A44F-6120-4059-B548-DDC1008BB527}|Task_6\\Task_6.csproj|solutionrelative:task_6\\app_data\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C45DA364-746E-4A28-A5C7-355EE78EF7AE}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_10\\task_1\\app_data\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C45DA364-746E-4A28-A5C7-355EE78EF7AE}|Task_1\\Task_1.csproj|solutionrelative:task_1\\app_data\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C45DA364-746E-4A28-A5C7-355EE78EF7AE}|Task_1\\Task_1.csproj|c:\\users\\nemof\\source\\repos\\lab_10\\task_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C45DA364-746E-4A28-A5C7-355EE78EF7AE}|Task_1\\Task_1.csproj|solutionrelative:task_1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "users.json",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_10\\Task_6\\App_Data\\users.json",
+              "RelativeDocumentMoniker": "Task_6\\App_Data\\users.json",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_10\\Task_6\\App_Data\\users.json",
+              "RelativeToolTip": "Task_6\\App_Data\\users.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-01T12:13:45.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "users.json",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_10\\Task_1\\App_Data\\users.json",
+              "RelativeDocumentMoniker": "Task_1\\App_Data\\users.json",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_10\\Task_1\\App_Data\\users.json",
+              "RelativeToolTip": "Task_1\\App_Data\\users.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-01T12:12:47.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_10\\Task_1\\Program.cs",
+              "RelativeDocumentMoniker": "Task_1\\Program.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_10\\Task_1\\Program.cs",
+              "RelativeToolTip": "Task_1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T12:12:20.237Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

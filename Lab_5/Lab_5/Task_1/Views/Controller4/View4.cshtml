@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Результат";
+    // Використовуємо клас для сторінки з результатом
+    ViewBag.BodyClass = "bg4";
+}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="form-box text-center">
+            <h2>Результат</h2>
+            <!-- Відображення обчисленого результату -->
+            <p>@ViewBag.Result</p>
+            <!-- Посилання для запуску нового обчислення -->
+            <a href="@Url.Action("View1", "Controller1")" class="btn btn-primary">Нове обчислення</a>
+        </div>
+    </div>
+</div>

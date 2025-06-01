@@ -1,0 +1,48 @@
+﻿@model Task_6.Models.TestQuestion
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Create Question";
+}
+<div class="form-card animate__animated animate__fadeIn">
+    <h2>Create Question</h2>
+    <div class="mb-3">
+        <a asp-controller="Account" asp-action="Profile" class="btn btn-outline-secondary">
+            ← Back to Profile
+        </a>
+    </div>
+    <form asp-action="CreateQuestion" method="post">
+        <div class="mb-3">
+            <label asp-for="Text" class="form-label">Question Text</label>
+            <input asp-for="Text" class="form-control" />
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label asp-for="OptionA" class="form-label">Option A</label>
+                <input asp-for="OptionA" class="form-control" />
+            </div>
+            <div class="col">
+                <label asp-for="OptionB" class="form-label">Option B</label>
+                <input asp-for="OptionB" class="form-control" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label asp-for="OptionC" class="form-label">Option C</label>
+                <input asp-for="OptionC" class="form-control" />
+            </div>
+            <div class="col">
+                <label asp-for="OptionD" class="form-label">Option D</label>
+                <input asp-for="OptionD" class="form-control" />
+            </div>
+        </div>
+        <div class="mb-3">
+            <label asp-for="QuestionType" class="form-label">Type (R/C/T)</label>
+            <input asp-for="QuestionType" class="form-control" maxlength="1" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="CorrectAnswers" class="form-label">Correct Answers</label>
+            <input asp-for="CorrectAnswers" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+    </form>
+</div>

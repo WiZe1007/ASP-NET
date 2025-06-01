@@ -1,0 +1,20 @@
+﻿@model Task_6.Models.TestSettings
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Test Settings";
+}
+<div class="form-card animate__animated animate__fadeIn">
+    <h2>Test Settings</h2>
+    <div class="mb-3">
+        <a asp-controller="Account" asp-action="Profile" class="btn btn-outline-secondary">
+            ← Back to Profile
+        </a>
+    </div>
+    <form asp-action="Settings" method="post">
+        <div class="mb-3">
+            <label asp-for="AllowedAttempts" class="form-label">Allowed Attempts</label>
+            <input asp-for="AllowedAttempts" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+    </form>
+</div>

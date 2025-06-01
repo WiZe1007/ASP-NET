@@ -1,0 +1,25 @@
+﻿@{
+    // Підключаємо макет
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    // Заголовок сторінки для введення Email
+    ViewData["Title"] = "Введення Email";
+    // Встановлюємо фон для цього кроку (bg2)
+    ViewBag.BodyClass = "bg2";
+}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="form-box">
+            <!-- Заголовок для вводу Email -->
+            <h2 class="text-center">Введіть Email</h2>
+            <form asp-action="Step2" method="post">
+                <div class="form-group">
+                    <!-- Поле введення для Email -->
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Введіть Email" required />
+                </div>
+                <!-- Переходимо до наступного кроку -->
+                <button type="submit" class="btn btn-primary btn-block">Далі</button>
+            </form>
+        </div>
+    </div>
+</div>

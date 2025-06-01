@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Введення сторони B";
+    // Використовуємо інший клас для фону, щоб відрізнити сторінки
+    ViewBag.BodyClass = "bg2";
+}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="form-box">
+            <h2 class="text-center">Введення сторони B</h2>
+            <form asp-action="View2" method="post">
+                <div class="form-group">
+                    <label for="sideB">Сторона B:</label>
+                    <!-- Введення значення для сторони B -->
+                    <input type="text" class="form-control" id="sideB" name="sideB" placeholder="Введіть довжину сторони B" required />
+                </div>
+                <!-- Переходимо до наступного введення -->
+                <button type="submit" class="btn btn-primary btn-block">Далі</button>
+            </form>
+        </div>
+    </div>
+</div>

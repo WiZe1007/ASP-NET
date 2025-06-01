@@ -1,0 +1,84 @@
+/* Фонове зображення для всієї сторінки */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("https://a-static.besthdwallpaper.com/clear-waters-and-green-rocky-hills-in-america-s-wonderful-nature-wallpaper-2560x1600-107789_7.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Контейнер для форми з розрахунками */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 30px auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Заголовок форми */
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Стилізація кнопок */
+.btn-custom {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+    .btn-custom:hover {
+        background-color: #45a049;
+    }
+
+/* Кнопка скидання */
+.btn-reset {
+    background-color: #f44336 !important;
+}
+
+    .btn-reset:hover {
+        background-color: #e53935 !important;
+    }
+
+/* Стилізація блоку для виведення результатів */
+.data-display {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    padding: 15px 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+    .data-display h4 {
+        text-align: center;
+    }
+
+/* Футер сайту */
+.custom-footer {
+    margin-top: 80px;
+    padding: 10px 0;
+    font-size: 0.85em;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+    .custom-footer p {
+        color: gold;
+        margin: 0;
+    }
+
+/* Стиль для картинки трикутника */
+.triangle-image img {
+    max-width: 300px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}

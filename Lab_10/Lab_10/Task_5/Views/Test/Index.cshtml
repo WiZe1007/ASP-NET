@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Тест: Історія України";
+    int attemptsLeft = (int)ViewBag.AttemptsLeft;
+    int maxAttempts = (int)ViewBag.AllowedAttempts;
+}
+
+<div class="form-card animate__animated animate__fadeIn">
+    <h2>@ViewData["Title"]</h2>
+
+    @if (attemptsLeft > 0)
+    {
+        <p>
+            У вас залишилося спроб:
+            <strong>@attemptsLeft</strong> з
+            <strong>@maxAttempts</strong>.
+        </p>
+        <div class="d-flex justify-content-between">
+            <a asp-controller="Account" asp-action="Profile" class="btn btn-outline-secondary">
+                ← Назад до профілю
+            </a>
+            <a asp-action="Take" class="btn btn-primary">Почати</a>
+        </div>
+    }
+    else
+    {
+        <p class="text-danger">
+            Ви використали всі дозволені спроби проходження тесту.
+        </p>
+        <a asp-controller="Account" asp-action="Profile" class="btn btn-outline-secondary">
+            ← Назад до профілю
+        </a>
+    }
+</div>

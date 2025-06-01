@@ -1,0 +1,32 @@
+﻿@model Task_2.Models.SendMessageViewModel
+@{
+    ViewData["Title"] = "Send Message";
+    var users = ViewBag.Users as List<string>;
+}
+<div class="form-card animate__animated animate__fadeIn">
+    <h2>Відправити повідомлення</h2>
+    <form asp-action="Send" method="post" novalidate>
+        <div class="form-material mb-4">
+            <span asp-validation-for="To" class="error-message"></span>
+            <label asp-for="To">To</label>
+            <select asp-for="To" class="form-control">
+                <option value="">-- Оберіть отримувача --</option>
+                @foreach (var u in users)
+                {
+                    <option value="@u">@u</option>
+                }
+            </select>
+        </div>
+        <div class="form-material mb-4">
+            <span asp-validation-for="Theme" class="error-message"></span>
+            <label asp-for="Theme">Theme</label>
+            <input asp-for="Theme" class="form-control" />
+        </div>
+        <div class="form-material mb-4">
+            <span asp-validation-for="Text" class="error-message"></span>
+            <label asp-for="Text">Text</label>
+            <textarea asp-for="Text" class="form-control" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn-register">Send</button>
+    </form>
+</div>

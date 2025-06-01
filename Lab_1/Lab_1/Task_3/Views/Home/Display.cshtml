@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Результат (Display)";
+}
+
+<div class="container my-4">
+    <h2 class="mb-3">Шахова таблиця</h2>
+    <p class="mb-4">
+        Кількість рядків (з форми): @ViewBag.Rows<br />
+        Кількість стовпчиків (з БД): @ViewBag.Cols
+    </p>
+
+    <!-- Виводимо готовий HTML-код таблиці через Html.Raw -->
+    <div class="mb-4">
+        @Html.Raw(ViewBag.TableHtml)
+    </div>
+
+    <a asp-action="Index" asp-controller="Home" class="btn btn-secondary">Назад</a>
+</div>

@@ -1,0 +1,8 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+<div class="form-card animate__animated animate__fadeIn text-center">
+    <h2>Welcome, @ViewData["UserName"]!</h2>
+    <p>You have successfully logged in.</p>
+    <a asp-action="Logout" asp-controller="Account" class="btn btn-warning mt-3">LOGOUT</a>
+</div>

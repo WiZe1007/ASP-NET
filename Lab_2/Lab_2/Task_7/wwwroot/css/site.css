@@ -1,0 +1,35 @@
+html {
+    font-size: 14px; /* Базовий розмір шрифту для маленьких екранів */
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px; /* Збільшуємо шрифт на великих екранах */
+    }
+}
+
+/* Фокус, активні стани та інші ефекти для елементів */
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background: url('https://s1.1zoom.me/b5440/715/USA_Parks_Mountains_Lake_Stones_Forests_California_556636_1920x1080.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Колір тексту для блоку результату */
+.result-text {
+    color: white;
+}
+
+/* Оновлення стилів для навбара та футера */
+.navbar, .footer {
+    background-color: rgba(255, 255, 255, 0.9);
+}

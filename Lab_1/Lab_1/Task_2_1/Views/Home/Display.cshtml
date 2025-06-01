@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Відображення п'яти зображень (Топологія варіант №12)";
+
+    // Зчитуємо URL-зображень з ViewBag
+    var url1 = ViewBag.Image1Url;
+    var url2 = ViewBag.Image2Url;
+    var url3 = ViewBag.Image3Url;
+    var url4 = ViewBag.Image4Url;
+    var url5 = ViewBag.Image5Url;
+
+    // Зчитуємо розміри з БД
+    var w1 = ViewBag.Image1Width;
+    var h1 = ViewBag.Image1Height;
+    var w2 = ViewBag.Image2Width;
+    var h2 = ViewBag.Image2Height;
+    var w3 = ViewBag.Image3Width;
+    var h3 = ViewBag.Image3Height;
+    var w4 = ViewBag.Image4Width;
+    var h4 = ViewBag.Image4Height;
+    var w5 = ViewBag.Image5Width;
+    var h5 = ViewBag.Image5Height;
+}
+
+<div class="container my-4">
+    <h2 class="mb-3">Відображення п'яти зображень (Топологія варіант №12)</h2>
+    <p class="mb-4">
+        Посилання (URL) отримуємо з форми,<br />
+        розміри (width, height) зчитуються з БД (таблиця ImageDimensions).
+    </p>
+
+    <!-- Контейнер для зображень із nowrap і вирівнюванням ліворуч -->
+    <div class="border p-3" style="white-space: nowrap; text-align: left;">
+        <img src="@url1" alt="Зобр1" style="width:@w1; height:@h1; vertical-align: bottom; margin-right:5px; border:1px solid #333;" />
+        <img src="@url2" alt="Зобр2" style="width:@w2; height:@h2; vertical-align: bottom; margin-right:5px; border:1px solid #333;" />
+        <img src="@url3" alt="Зобр3" style="width:@w3; height:@h3; vertical-align: bottom; margin-right:5px; border:1px solid #333;" />
+        <img src="@url4" alt="Зобр4" style="width:@w4; height:@h4; vertical-align: bottom; margin-right:5px; border:1px solid #333;" />
+        <img src="@url5" alt="Зобр5" style="width:@w5; height:@h5; vertical-align: bottom; margin-right:5px; border:1px solid #333;" />
+    </div>
+
+    <br />
+    <a asp-action="Index" asp-controller="Home" class="btn btn-secondary">Назад</a>
+</div>

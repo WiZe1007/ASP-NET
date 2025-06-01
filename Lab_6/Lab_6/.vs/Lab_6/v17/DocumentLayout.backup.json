@@ -1,0 +1,305 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nemof\\source\\repos\\Lab_6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_7\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|solutionrelative:task_7\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|solutionrelative:task_7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_7\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|solutionrelative:task_7\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_7\\models\\transport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|solutionrelative:task_7\\models\\transport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_7\\task_7.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|solutionrelative:task_7\\task_7.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_7\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|solutionrelative:task_7\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_7\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|solutionrelative:task_7\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_7\\controllers\\transportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|solutionrelative:task_7\\controllers\\transportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_7\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|solutionrelative:task_7\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_7\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|solutionrelative:task_7\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_7\\views\\transport\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|solutionrelative:task_7\\views\\transport\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_7\\views\\transport\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|solutionrelative:task_7\\views\\transport\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_7\\views\\transport\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|solutionrelative:task_7\\views\\transport\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_7\\views\\transport\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|solutionrelative:task_7\\views\\transport\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_7\\views\\transport\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0F2166B0-51D5-4EF7-929B-CDCCF67C4D8C}|Task_7\\Task_7.csproj|solutionrelative:task_7\\views\\transport\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DD8E73E-0851-408B-A0E7-3201BE918CA1}|Task_3\\Task_3.csproj|c:\\users\\nemof\\source\\repos\\lab_6\\task_3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0DD8E73E-0851-408B-A0E7-3201BE918CA1}|Task_3\\Task_3.csproj|solutionrelative:task_3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TransportDB/True/SqlTable/dbo.Transports.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAOUUAAAAAAAAAAAmwOoUAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-06-01T11:28:20.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Program.cs",
+              "RelativeDocumentMoniker": "Task_7\\Program.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Program.cs",
+              "RelativeToolTip": "Task_7\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T11:24:06.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\appsettings.json",
+              "RelativeDocumentMoniker": "Task_7\\appsettings.json",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\appsettings.json",
+              "RelativeToolTip": "Task_7\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-01T11:23:53.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Task_7.csproj",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Task_7.csproj",
+              "RelativeDocumentMoniker": "Task_7\\Task_7.csproj",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Task_7.csproj",
+              "RelativeToolTip": "Task_7\\Task_7.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-01T11:23:11.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Task_7\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Task_7\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-01T11:23:07.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Task_7\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Task_7\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T11:22:55.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TransportController.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Controllers\\TransportController.cs",
+              "RelativeDocumentMoniker": "Task_7\\Controllers\\TransportController.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Controllers\\TransportController.cs",
+              "RelativeToolTip": "Task_7\\Controllers\\TransportController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T11:22:46.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Transport.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Models\\Transport.cs",
+              "RelativeDocumentMoniker": "Task_7\\Models\\Transport.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Models\\Transport.cs",
+              "RelativeToolTip": "Task_7\\Models\\Transport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T11:22:32.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Task_7\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Task_7\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T11:22:24.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Task_7\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Task_7\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T11:22:39.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_7\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Task_7\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T11:22:27.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Views\\Transport\\Create.cshtml",
+              "RelativeDocumentMoniker": "Task_7\\Views\\Transport\\Create.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Views\\Transport\\Create.cshtml",
+              "RelativeToolTip": "Task_7\\Views\\Transport\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T11:22:18.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Views\\Transport\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Task_7\\Views\\Transport\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Views\\Transport\\Delete.cshtml",
+              "RelativeToolTip": "Task_7\\Views\\Transport\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T11:22:14.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Views\\Transport\\Details.cshtml",
+              "RelativeDocumentMoniker": "Task_7\\Views\\Transport\\Details.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Views\\Transport\\Details.cshtml",
+              "RelativeToolTip": "Task_7\\Views\\Transport\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T11:22:10.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Views\\Transport\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Task_7\\Views\\Transport\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Views\\Transport\\Edit.cshtml",
+              "RelativeToolTip": "Task_7\\Views\\Transport\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T11:22:05.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Views\\Transport\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task_7\\Views\\Transport\\Index.cshtml",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_7\\Views\\Transport\\Index.cshtml",
+              "RelativeToolTip": "Task_7\\Views\\Transport\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T11:21:59.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_3\\appsettings.json",
+              "RelativeDocumentMoniker": "Task_3\\appsettings.json",
+              "ToolTip": "C:\\Users\\nemof\\source\\repos\\Lab_6\\Task_3\\appsettings.json",
+              "RelativeToolTip": "Task_3\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-12T09:37:17.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "dbo.Transports.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TransportDB/True/SqlTable/dbo.Transports.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TransportDB/True/SqlTable/dbo.Transports.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-04-12T09:37:13.308Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

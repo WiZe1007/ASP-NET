@@ -1,0 +1,44 @@
+﻿@model Task_2.Models.Transport
+
+@{
+    ViewData["Title"] = "Форма транспорту";
+}
+
+<h1>Форма введення даних про транспорт</h1>
+
+<!-- Суворо типізована форма з TagHelper-ами -->
+<form asp-action="Index" method="post">
+    <div class="mb-3">
+        <label asp-for="TransportType" class="form-label">Вид транспорту (Tr, Tl, A)</label>
+        <input asp-for="TransportType" class="form-control" placeholder="Введіть вид транспорту" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="RouteNumber" class="form-label">Номер маршруту</label>
+        <input asp-for="RouteNumber" class="form-control" placeholder="Введіть номер маршруту" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="RouteDistance" class="form-label">Протяжність маршруту (км)</label>
+        <input asp-for="RouteDistance" class="form-control" placeholder="Введіть протяжність" type="number" step="0.01" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="TravelTime" class="form-label">Час в дорозі (хв)</label>
+        <input asp-for="TravelTime" class="form-control" placeholder="Введіть час в дорозі" type="number" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Надіслати</button>
+    <!-- Скидання форми -->
+    <button type="button" class="btn btn-secondary" onclick="window.location.href='@Url.Action("Index", "Transport")'">Скинути</button>
+</form>
+
+@if (Model != null)
+{
+    <hr />
+    <div class="result">
+        <h2>Введені дані:</h2>
+        <p><strong>Id:</strong> @Model.Id</p>
+        <p><strong>Вид транспорту:</strong> @Model.TransportType</p>
+        <p><strong>Номер маршруту:</strong> @Model.RouteNumber</p>
+        <p><strong>Протяжність маршруту (км):</strong> @Model.RouteDistance</p>
+        <p><strong>Час в дорозі (хв):</strong> @Model.TravelTime</p>
+    </div>
+}

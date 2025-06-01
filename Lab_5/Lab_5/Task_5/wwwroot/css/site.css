@@ -1,0 +1,71 @@
+/* Загальні налаштування: забезпечуємо повноекранне відображення */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Використання flexbox для організації розташування елементів */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Головний контейнер займає всю доступну висоту */
+main {
+    flex: 1 0 auto;
+}
+
+/* Футер завжди залишається внизу сторінки */
+footer {
+    flex-shrink: 0;
+}
+
+/* Фонові зображення для кожного етапу реєстрації */
+body.bg1 {
+    /* Фон для етапу 1 (введення пароля) */
+    background: url('https://wallpapers.com/images/hd/1920-x-1080-nature-desktop-bhbe2xkopirx8goi.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.bg2 {
+    /* Фон для етапу 2 (введення Email) */
+    background: url('https://wallpapers.com/images/hd/1920-x-1080-nature-desktop-7h76hbdcrtpawe3i.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.bg3 {
+    /* Фон для етапу 3 (введення адреси) */
+    background: url('https://wallpapers.com/images/hd/1920-x-1080-nature-desktop-3josvp4sieeo5ocn.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.bg4 {
+    /* Фон для етапу 4 (введення логіну та підсумок) */
+    background: url('https://i.imgur.com/HaJuteg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Стилізація блоку форми – прозорий фон для кращої читабельності */
+.form-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-out;
+    margin-top: 30px;
+}
+
+/* Проста анімація появи форми */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

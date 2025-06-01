@@ -1,0 +1,51 @@
+﻿@model Task_3.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Login";  // Встановлюємо заголовок для сторінки
+}
+<div class="form-card animate__animated animate__fadeIn">
+    <h2>Login</h2>  <!-- Заголовок форми -->
+
+    <form asp-action="Login" method="post" novalidate>
+        <!-- Форма для входу -->
+
+        <div class="form-material position-relative mb-4">
+            <span asp-validation-for="Name" class="error-message"></span>  <!-- Показуємо повідомлення про помилку для поля Name -->
+            <label asp-for="Name">Name</label>  <!-- Лейбл для поля Name -->
+            <input asp-for="Name" class="form-control" />  <!-- Поле для введення імені -->
+        </div>
+
+        <div class="form-material position-relative mb-4">
+            <span asp-validation-for="Password" class="error-message"></span>  <!-- Показуємо повідомлення про помилку для поля Password -->
+            <label asp-for="Password">Password</label>  <!-- Лейбл для поля Password -->
+            <input asp-for="Password" type="password" class="form-control" />  <!-- Поле для введення пароля -->
+        </div>
+
+        <span asp-validation-summary="ModelOnly" class="text-danger mb-3 d-block"></span>  <!-- Підсумок помилок -->
+        <button type="submit" class="btn-register">LOGIN</button>  <!-- Кнопка для входу -->
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");  // Підключення скриптів для валідації
+    }
+    <script>
+        $(function() {
+            var form = $('form');
+            form.removeData('validator').removeData('unobtrusiveValidation');  // Перезавантаження налаштувань валідації
+            $.validator.setDefaults({
+                showErrors: function(errorMap, errorList) {
+                    this.defaultShowErrors();  // Показуємо помилки за замовчуванням
+                    $('.error-message').each(function() {
+                        var txt = $(this).text().trim();  // Обробляємо текст помилки
+                        if (txt) {
+                            var parts = txt.split(' ');  // Розділяємо текст на частини
+                            $(this).html(parts.join('<br/>'));  // Виводимо помилки через <br/>
+                        }
+                    });
+                }
+            });
+            $.validator.unobtrusive.parse(form);  // Активуємо валідацію
+        });
+    </script>
+}

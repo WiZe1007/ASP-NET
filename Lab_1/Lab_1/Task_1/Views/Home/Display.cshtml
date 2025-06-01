@@ -1,0 +1,93 @@
+﻿@{
+    // Встановлюємо заголовок сторінки
+    ViewData["Title"] = "Результат (Display)";
+
+    // Отримуємо дані для першого абзацу з ViewBag
+    var p1Text = ViewBag.Paragraph1Text;
+    var p1Color = ViewBag.Paragraph1Color;
+    var p1Align = ViewBag.Paragraph1Align;
+    var p1BgColor = ViewBag.Paragraph1BgColor;
+    var p1BgImage = ViewBag.Paragraph1BgImage;
+    var p1FontSize = ViewBag.Paragraph1FontSize;
+    var p1Margin = ViewBag.Paragraph1Margin;
+    var p1Padding = ViewBag.Paragraph1Padding;
+
+    // Дані для другого абзацу
+    var p2Text = ViewBag.Paragraph2Text;
+    var p2Color = ViewBag.Paragraph2Color;
+    var p2Align = ViewBag.Paragraph2Align;
+    var p2BgColor = ViewBag.Paragraph2BgColor;
+    var p2BgImage = ViewBag.Paragraph2BgImage;
+    var p2FontSize = ViewBag.Paragraph2FontSize;
+    var p2Margin = ViewBag.Paragraph2Margin;
+    var p2Padding = ViewBag.Paragraph2Padding;
+
+    // Дані для третього абзацу
+    var p3Text = ViewBag.Paragraph3Text;
+    var p3Color = ViewBag.Paragraph3Color;
+    var p3Align = ViewBag.Paragraph3Align;
+    var p3BgColor = ViewBag.Paragraph3BgColor;
+    var p3BgImage = ViewBag.Paragraph3BgImage;
+    var p3FontSize = ViewBag.Paragraph3FontSize;
+    var p3Margin = ViewBag.Paragraph3Margin;
+    var p3Padding = ViewBag.Paragraph3Padding;
+}
+
+<!-- Заголовок вмісту -->
+<h2 class="mb-3">Згенеровані абзаци</h2>
+<!-- Опис того, звідки беруться параметри -->
+<p class="mb-4">
+    Параметри кольору, тексту, фону тощо взято з форми.<br />
+    Параметри розміру та відступів (FontSize, Margin, Padding) взято з БД (таблиця ParagraphStyles).
+</p>
+
+<div class="mb-4">
+    <!-- Блок для першого абзацу -->
+    <div class="border p-3 mb-3">
+        <p style="
+            color:@p1Color;
+            text-align:@p1Align;
+            background-color:@p1BgColor;
+           background-image: @(string.IsNullOrEmpty(p1BgImage) ? "none" : "url('" + p1BgImage + "')");
+           font-size:@p1FontSize;
+           margin:@p1Margin;
+           padding:@p1Padding;
+           ">
+        @p1Text
+        </p>
+    </div>
+
+    <!-- Блок для другого абзацу -->
+    <div class="border p-3 mb-3">
+        <p style="
+            color:@p2Color;
+            text-align:@p2Align;
+            background-color:@p2BgColor;
+            background-image: @(string.IsNullOrEmpty(p2BgImage) ? "none" : "url('" + p2BgImage + "')");
+            font-size:@p2FontSize;
+            margin:@p2Margin;
+            padding:@p2Padding;
+        ">
+        @p2Text
+        </p>
+    </div>
+
+    <!-- Блок для третього абзацу -->
+    <div class="border p-3 mb-3">
+        <p style="
+            color:@p3Color;
+            text-align:@p3Align;
+            background-color:@p3BgColor;
+            background-image: @(string.IsNullOrEmpty(p3BgImage) ? "none" : "url('" + p3BgImage + "')");
+            font-size:@p3FontSize;
+            margin:@p3Margin;
+            padding:@p3Padding;
+        ">
+        @p3Text
+        </p>
+    </div>
+</div>
+
+<br />
+<!-- Кнопка для повернення на головну сторінку -->
+<a asp-action="Index" asp-controller="Home" class="btn btn-secondary">Назад</a>

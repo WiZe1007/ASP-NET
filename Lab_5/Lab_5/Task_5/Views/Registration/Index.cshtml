@@ -1,0 +1,53 @@
+﻿@{
+    // Підключаємо загальний макет сторінки
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    // Отримуємо номер поточного етапу з ViewBag (визначає, що вводити)
+    int step = ViewBag.Step;
+    // Заголовок форми – буде змінюватися залежно від етапу
+    string title = ViewBag.Title;
+    // Підказка для поля вводу (наприклад, "Пароль:", "Email:" тощо)
+    string prompt = ViewBag.Prompt;
+    // Отримуємо повідомлення про успіх, якщо реєстрація завершена
+    string success = ViewBag.Success as string;
+    // Отримуємо повідомлення про помилку, якщо щось пішло не так
+    string error = ViewBag.Error as string;
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="form-box">
+            @if (!string.IsNullOrEmpty(success))
+            {
+                <!-- Якщо реєстрація пройшла успішно, виводимо повідомлення -->
+                <div class="alert alert-success text-center">
+                    @success
+                </div>
+                <!-- Кнопка для запуску нового процесу реєстрації -->
+                <a href="@Url.Action("Index", "Registration", new { reset = true })" class="btn btn-primary btn-block">
+                    Нова реєстрація
+                </a>
+            }
+            else
+            {
+                <!-- Якщо ще не завершено – показуємо заголовок форми -->
+                <h2 class="text-center">@title</h2>
+                @if (!string.IsNullOrEmpty(error))
+                {
+                    <!-- Виводимо повідомлення про помилку, якщо воно є -->
+                    <div class="alert alert-danger">
+                        @error
+                    </div>
+                }
+                <!-- Форма вводу для поточного етапу -->
+                <form asp-action="Index" method="post">
+                    <div class="form-group">
+                        <label for="input">@prompt</label>
+                        <input type="text" class="form-control" id="input" name="input" placeholder="@prompt" required />
+                    </div>
+                    <!-- Кнопка для підтвердження введення і переходу до наступного кроку -->
+                    <button type="submit" class="btn btn-primary btn-block">Далі</button>
+                </form>
+            }
+        </div>
+    </div>
+</div>

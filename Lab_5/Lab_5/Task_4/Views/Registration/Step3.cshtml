@@ -1,0 +1,24 @@
+﻿@{
+    // Встановлюємо макет і заголовок для введення адреси
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Введення адреси";
+    // Встановлюємо фон цього кроку (bg3)
+    ViewBag.BodyClass = "bg3";
+}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="form-box">
+            <!-- Заголовок форми для адреси -->
+            <h2 class="text-center">Введіть адресу</h2>
+            <form asp-action="Step3" method="post">
+                <div class="form-group">
+                    <!-- Поле для вводу адреси -->
+                    <label for="address">Адреса:</label>
+                    <input type="text" class="form-control" id="address" name="address" placeholder="Введіть адресу" required />
+                </div>
+                <!-- Переходимо до наступного кроку -->
+                <button type="submit" class="btn btn-primary btn-block">Далі</button>
+            </form>
+        </div>
+    </div>
+</div>

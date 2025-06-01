@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Task_4.Models.Transport>
+
+@{
+    ViewData["Title"] = "Список маршрутів";
+}
+
+<h1>Список маршрутів</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Додати новий маршрут</a>
+</p>
+
+<table class="table custom-bordered-table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Вид транспорту</th>
+            <th>Номер маршруту</th>
+            <th>Протяжність (км)</th>
+            <th>Час в дорозі (хв)</th>
+            <th>Кількість зупинок</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.VidTransportu</td>
+                <td>@item.NomMarshruta</td>
+                <td>@item.ProtjazhnistMarshruta</td>
+                <td>@item.ChasVDorozi</td>
+                <td>@item.KilkistZupynok</td>
+                <td>
+                    <a class="btn btn-sm btn-info btn-edit" asp-action="Edit" asp-route-id="@item.Id">
+                        Редагувати
+                    </a>
+                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Деталі</a>
+                    <form asp-action="Delete" method="get" class="inline-form">
+                        <input type="hidden" name="id" value="@item.Id" />
+                        <button type="submit" class="btn-delete">Видалити</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

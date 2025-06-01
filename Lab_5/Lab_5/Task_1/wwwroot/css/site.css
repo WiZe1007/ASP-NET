@@ -1,0 +1,71 @@
+/* Загальні стилі для повноекранного відображення */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Використання flex для розташування елементів на сторінці */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Основний контейнер займає увесь доступний простір */
+main {
+    flex: 1 0 auto;
+}
+
+/* Футер завжди розташовується внизу */
+footer {
+    flex-shrink: 0;
+}
+
+/* Фонові зображення для різних сторінок */
+body.bg1 {
+    /* Фон для першої сторінки */
+    background: url('https://img.freepik.com/free-photo/morskie-oko-tatry_1204-510.jpg?t=st=1743410338~exp=1743413938~hmac=1ab8e678fda2eb7170d5ca79c62e0b981815b571f12622676b8d6b77a81423cd&w=1380') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.bg2 {
+    /* Фон для другої сторінки */
+    background: url('https://img.freepik.com/free-photo/vestrahorn-mountains-stokksnes-iceland_335224-667.jpg?t=st=1743412003~exp=1743415603~hmac=12e2ecd58a8dea89f7b89fbc85c954368b412f4c77180aca043ef1361625b730&w=1380') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.bg3 {
+    /* Фон для третьої сторінки */
+    background: url('https://img.freepik.com/free-photo/beautiful-shot-natural-scenery-autumn_181624-25934.jpg?t=st=1743412524~exp=1743416124~hmac=9d9f5eb2d50b007e8b811a1d85ed4f6e69bb5ecbaa8f42e0a7d9f4b764585638&w=1380') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.bg4 {
+    /* Фон для сторінки з результатом */
+    background: url('https://img.freepik.com/free-photo/scenic-view-mountains-lake_53876-138187.jpg?t=st=1743412542~exp=1743416142~hmac=2d0c5f47c5f58f05e66b05ee8dbe68f8697c85d50a0b22084452025e24e96521&w=1380') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Стилізація форми: прозорий блок з анімацією */
+.form-box {
+    background-color: rgba(255, 255, 255, 0.9); /* напівпрозорий фон для читабельності */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-out;
+    margin-top: 30px;
+}
+
+/* Анімація появи форми */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* трохи піднімаємо елемент */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0); /* повертаємо на місце */
+    }
+}

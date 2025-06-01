@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Зображення за новою топологією (Сходинки)";
+
+    // Зчитуємо URL-зображень з ViewBag
+    var url1 = ViewBag.Image1Url;
+    var url2 = ViewBag.Image2Url;
+    var url3 = ViewBag.Image3Url;
+
+    // Розміри з бази даних
+    var w1 = ViewBag.Image1Width;
+    var h1 = ViewBag.Image1Height;
+    var w2 = ViewBag.Image2Width;
+    var h2 = ViewBag.Image2Height;
+    var w3 = ViewBag.Image3Width;
+    var h3 = ViewBag.Image3Height;
+}
+
+<div class="container my-4">
+    <h2 class="mb-3">Зображення “сходинками” (Варіант 12)</h2>
+    <p class="mb-4">
+        Зобр1, Зобр2, Зобр3 із різними розмірами. “Сходинки” виходять завдяки
+        <code>white-space: nowrap;</code> та <code>vertical-align: bottom;</code>.
+    </p>
+
+    <!-- Контейнер для зображень -->
+    <div class="border p-3" style="white-space: nowrap; text-align: left;">
+        <img src="@url1" alt="Зобр1" style="width:@w1; height:@h1; vertical-align: bottom; margin-right: 10px; border:1px solid #333;" />
+        <img src="@url2" alt="Зобр2" style="width:@w2; height:@h2; vertical-align: bottom; margin-right: 10px; border:1px solid #333;" />
+        <img src="@url3" alt="Зобр3" style="width:@w3; height:@h3; vertical-align: bottom; margin-right: 10px; border:1px solid #333;" />
+    </div>
+
+    <div class="mt-3">
+        <a asp-action="Index" asp-controller="Home" class="btn btn-secondary">Назад</a>
+    </div>
+</div>

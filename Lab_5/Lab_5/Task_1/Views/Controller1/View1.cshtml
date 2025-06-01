@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Введення сторони A";
+    // Встановлюємо клас для фонового зображення на сторінці
+    ViewBag.BodyClass = "bg1";
+}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="form-box">
+            <h2 class="text-center">Введення сторони A</h2>
+            <form asp-action="View1" method="post">
+                <div class="form-group">
+                    <label for="sideA">Сторона A:</label>
+                    <!-- Поле для введення значення сторони A -->
+                    <input type="text" class="form-control" id="sideA" name="sideA" placeholder="Введіть довжину сторони A" required />
+                </div>
+                <!-- Кнопка для переходу до наступного кроку -->
+                <button type="submit" class="btn btn-primary btn-block">Далі</button>
+            </form>
+        </div>
+    </div>
+</div>

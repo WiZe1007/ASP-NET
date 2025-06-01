@@ -1,0 +1,77 @@
+/* Основні стилі для сайту */
+
+/* Фонове зображення для сторінки */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("https://images4.alphacoders.com/122/1222302.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Стилізація контейнера для форми */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Стиль заголовку форми */
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Стилізація кнопок */
+.btn-custom {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+    .btn-custom:hover {
+        background-color: #45a049;
+    }
+
+.btn-reset {
+    background-color: #f44336 !important;
+}
+
+    .btn-reset:hover {
+        background-color: #e53935 !important;
+    }
+
+/* Блок для відображення даних, які ввів користувач */
+.data-display {
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+    .data-display h4 {
+        text-align: center;
+    }
+
+/* Стилі для блоку з зображеннями */
+.image-topology {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+footer p {
+    color: gold;
+}

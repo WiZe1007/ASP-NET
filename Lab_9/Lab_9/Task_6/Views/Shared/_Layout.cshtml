@@ -1,0 +1,82 @@
+﻿@{
+    var ctrl = ViewContext.RouteData.Values["controller"]?.ToString();
+    var act = ViewContext.RouteData.Values["action"]?.ToString();
+    var user = Context.Session.GetString("UserName");
+}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>@ViewData["Title"] – NovaChat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-controller="Splash" asp-action="Index">NovaChat</a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    @* 1→1 navigation *@
+                    @if (ctrl == "Splash") { }
+                    else if (ctrl == "Account" && act == "Login")
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="Register">Register</a>
+                        </li>
+                    }
+                    else if (ctrl == "Account" && act == "Register")
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="Login">Login</a>
+                        </li>
+                    }
+                    else if (ctrl == "Account" && act == "Profile")
+                    {
+                        <li class="nav-item"><a class="nav-link" asp-action="Logout">Logout</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Messages" asp-action="Send">Send Msg</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Messages" asp-action="Inbox">Inbox</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Messages" asp-action="Sent">Sent</a></li>
+                    }
+                    else if (ctrl == "Messages" && act == "Send")
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Account" asp-action="Profile">Back to Profile</a>
+                        </li>
+                    }
+                    else if (ctrl == "Messages" && (act == "Inbox" || act == "Sent" || act == "Details"))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Account" asp-action="Profile">Back to Profile</a>
+                        </li>
+                    }
+                    else if (ctrl == "Account" && act.StartsWith("Edit"))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="Profile">Back to Profile</a>
+                        </li>
+                    }
+                </ul>
+                <span class="navbar-text text-muted">@user</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center align-items-center min-vh-100">
+        @RenderBody()
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

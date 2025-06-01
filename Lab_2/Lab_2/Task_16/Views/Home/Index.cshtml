@@ -1,0 +1,131 @@
+﻿@model Task_16.Models.CitySelectionModel
+@{
+    Layout = "_Layout";
+    // Створюємо список міст Єгипту – 5 міст
+    var cities = new List<string> { "Каїр", "Александрія", "Гіза", "Луксор", "Асуан" };
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Завдання 16 (Варіант №12)</title>
+    <style>
+        /* Контейнер форми у вигляді «карточки» */
+        .form-container {
+            position: relative;
+            width: 600px;
+            height: 350px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Стилі для комбобоксу */
+        .comboLabel {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            font-weight: bold;
+        }
+
+        .comboBox {
+            position: absolute;
+            left: 20px;
+            top: 50px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        /* Стилі для листбоксу */
+        .listLabel {
+            position: absolute;
+            left: 320px;
+            top: 20px;
+            font-weight: bold;
+        }
+
+        .listBox {
+            position: absolute;
+            left: 320px;
+            top: 50px;
+            width: 200px;
+            height: 100px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        /* Розташування кнопок */
+        .buttonChoose {
+            position: absolute;
+            left: 150px;
+            top: 280px;
+        }
+
+        .buttonReset {
+            position: absolute;
+            left: 270px;
+            top: 280px;
+        }
+        /* Стиль для виводу результатів */
+        .result-text {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Форма для вибору міста через комбобокс та листбокс -->
+    <form method="post" asp-action="Index" asp-controller="Home" class="form-container">
+        <!-- Комбобокс -->
+        <div class="comboLabel">Комбобокс (розкривний список):</div>
+        <select asp-for="ComboCity" name="comboCity" class="comboBox">
+            @foreach (var city in cities)
+            {
+                // Якщо місто співпадає з вибраним у моделі – додаємо selected
+                if (city == Model.ComboCity)
+                {
+                    <option value="@city" selected>@city</option>
+                }
+                else
+                {
+                    <option value="@city">@city</option>
+                }
+            }
+        </select>
+        <!-- Листбокс -->
+        <div class="listLabel">Листбокс (список):</div>
+        <select asp-for="ListCity" name="listCity" class="listBox" size="5">
+            @foreach (var city in cities)
+            {
+                if (city == Model.ListCity)
+                {
+                    <option value="@city" selected>@city</option>
+                }
+                else
+                {
+                    <option value="@city">@city</option>
+                }
+            }
+        </select>
+        <!-- Кнопки -->
+        <div class="buttonChoose">
+            <button type="submit" name="action" value="choose" class="btn btn-primary">Відіслати</button>
+        </div>
+        <div class="buttonReset">
+            <button type="submit" name="action" value="reset" class="btn btn-secondary">Скинути</button>
+        </div>
+    </form>
+    @if (ViewBag.ShowResult == true)
+    {
+        <hr />
+        <!-- Вивід вибраних параметрів -->
+        <div class="result-text">
+            <h3>Вибрані параметри:</h3>
+            <p>Комбобокс: @Model.ComboCity</p>
+            <p>Листбокс: @Model.ListCity</p>
+        </div>
+    }
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿@{
+    // Підключаємо загальний макет
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    // Заголовок цієї сторінки
+    ViewData["Title"] = "Введіть Email для пошуку";
+    // Встановлюємо фон для цього етапу (bg2)
+    ViewBag.BodyClass = "bg2";
+}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="form-box">
+            <!-- Заголовок форми -->
+            <h2 class="text-center">Введіть Email</h2>
+            @if (ViewBag.Error != null)
+            {
+                <!-- Вивід помилки, якщо вона є -->
+                <div class="alert alert-danger">@ViewBag.Error</div>
+            }
+            <form asp-action="Email" method="post">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Введіть Email" required />
+                </div>
+                <!-- Кнопка для запуску пошуку -->
+                <button type="submit" class="btn btn-primary btn-block">Пошук</button>
+            </form>
+        </div>
+    </div>
+</div>

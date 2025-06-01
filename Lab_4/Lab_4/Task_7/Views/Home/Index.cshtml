@@ -1,0 +1,80 @@
+﻿<!-- Підключаємо модель даних -->
+@model Task_7.Models.StringProcessingViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Використовуємо стандартний шаблон
+    ViewData["Title"] = "Обробка рядка"; // Встановлюємо заголовок сторінки
+}
+
+<div class="container mt-4">
+    <div class="form-container p-4 shadow-sm rounded">
+        <h2 class="text-center mb-4">Обробка рядка</h2>
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+        {
+            <div class="mb-3">
+                <!-- Лейбл для текстового поля -->
+                @Html.LabelFor(m => m.InputText, new { @class = "form-label" }) 
+                @Html.TextBoxFor(
+                         m => m.InputText,
+                         new
+                         {
+                             @class = "form-control",
+                             placeholder = "Введіть рядок (не менше 5 слів)",
+                             value = Model.InputText ?? "" // Якщо InputText == null, показуємо порожній рядок
+                         }
+                         ) 
+            </div>
+            <div class="mb-3">
+                <!-- Лейбл для числа повторень -->
+                @Html.LabelFor(m => m.RepeatCount, new { @class = "form-label" }) 
+                @Html.TextBoxFor(
+                         m => m.RepeatCount,
+                         new
+                         {
+                             @class = "form-control",
+                             type = "number",
+                             placeholder = "Введіть кількість повторень",
+                             value = Model.RepeatCount.HasValue ? Model.RepeatCount.Value.ToString() : ""
+                             // Якщо RepeatCount == null, робимо поле порожнім
+                         }
+                         ) 
+            </div>
+            <div class="text-center">
+                <!-- Кнопка для надсилання даних -->
+                <button type="submit" class="btn btn-primary" name="action" value="Process">Обробити</button>
+                <!-- Кнопка для скидання форми -->
+                <button type="submit" class="btn btn-secondary ms-2" name="action" value="Reset">Скинути</button> 
+            </div>
+        }
+    </div>
+
+    @* Якщо користувач щось ввів, починаємо обробку *@
+    @if (!string.IsNullOrEmpty(Model.InputText) && Model.RepeatCount.HasValue)
+    {
+        // Розбиваємо рядок на слова, щоб перевірити кількість
+        var words = Model.InputText.Split(new char[] { ' ' }, System.StringSplitOptions.RemoveEmptyEntries);
+        if (words.Length < 5)
+        {
+            <div class="alert alert-danger mt-4" role="alert">
+                Рядок має містити не менше 5 слів. Будь ласка, введіть коректний рядок.
+            </div>
+        }
+        else
+        {
+            int len = Model.InputText.Length; // Отримуємо довжину всього рядка
+            int mid = len / 2; // Знаходимо середину рядка
+            // Формуємо новий рядок: перша половина як є, друга - у верхньому регістрі
+            string processed = Model.InputText.Substring(0, mid) + Model.InputText.Substring(mid).ToUpper();
+
+            <div class="result mt-4 p-3 border rounded bg-light">
+                <h4 class="text-center">Оброблений рядок (друга половина у верхньому регістрі)</h4>
+                <!-- Виводимо оброблений рядок задану кількість разів -->
+                @for (int i = 0; i < Model.RepeatCount; i++)
+                {
+                    <p>@processed</p>
+                    // Повторюємо рядок
+                }
+            </div>
+        }
+    }
+</div>

@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Сторінка 1";
+    // Фон для Стор1
+    ViewBag.BackgroundUrl = "https://static.vecteezy.com/system/resources/previews/049/547/631/non_2x/stunning-high-resolution-nature-and-landscape-backgrounds-breathtaking-scenery-in-hd-free-photo.jpg";
+}
+
+<div class="container my-5">
+    <h2 class="mb-3">Сторінка 1</h2>
+    <p class="mb-3">Відвідувань: @ViewBag.VisitCount</p>
+    <p>Це Сторінка 1.</p>
+    <!-- За схемою: Стор1 → Стор3 -->
+    <a asp-controller="Page3" asp-action="Index" class="btn btn-primary">Далі</a>
+</div>

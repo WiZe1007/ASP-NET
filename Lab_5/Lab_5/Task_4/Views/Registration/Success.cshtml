@@ -1,0 +1,18 @@
+﻿@{
+    // Встановлюємо макет сторінки
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    // Заголовок, що повідомляє про успішну реєстрацію
+    ViewData["Title"] = "Реєстрація завершена";
+    // Використовуємо фон, аналогічний останньому кроку
+    ViewBag.BodyClass = "bg4";
+}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="form-box text-center">
+            <!-- Повідомлення про успішну реєстрацію -->
+            <h2>Реєстрацію успішно завершено!</h2>
+            <!-- Посилання для запуску нової реєстрації -->
+            <a href="@Url.Action("Step1", "Registration")" class="btn btn-primary">Нова реєстрація</a>
+        </div>
+    </div>
+</div>

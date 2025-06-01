@@ -1,0 +1,47 @@
+﻿@model Task_7.Controllers.Account
+@{
+    // Підключаємо загальний макет
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    // Заголовок сторінки результату
+    ViewData["Title"] = "Результат пошуку";
+    // Встановлюємо фон для сторінки результату
+    ViewBag.BodyClass = "bgResult";
+}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="form-box text-center">
+            <h2>Результат пошуку</h2>
+            @if (Model == null)
+            {
+                <!-- Якщо акаунт не знайдено, виводимо попередження -->
+                <div class="alert alert-warning">
+                    Акаунт не знайдено.
+                </div>
+            }
+            else
+            {
+                <!-- Виводимо деталі знайденого акаунту у вигляді таблиці -->
+                <table class="table table-bordered">
+                    <tr>
+                        <th>ID</th>
+                        <td>@Model.Id</td>
+                    </tr>
+                    <tr>
+                        <th>Пароль</th>
+                        <td>@Model.Password</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>@Model.Email</td>
+                    </tr>
+                    <tr>
+                        <th>Дата створення</th>
+                        <td>@Model.CreatedAt</td>
+                    </tr>
+                </table>
+            }
+            <!-- Кнопка для запуску нового пошукового запиту -->
+            <a href="@Url.Action("Password", "Search", new { reset = true })" class="btn btn-primary">Нова пошукова операція</a>
+        </div>
+    </div>
+</div>

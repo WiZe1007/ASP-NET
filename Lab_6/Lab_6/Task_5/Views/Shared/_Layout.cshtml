@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Task_5</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm2N+phZ0GAk2vBZX3L9/aqG5Uq4fZAS+2jQ0/1KW8fW/5pXz"
+          crossorigin="anonymous">
+</head>
+<body>
+    <!-- Обгортка для основного контенту -->
+    <div class="overlay">
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody() <!-- Рендеринг основного контенту -->
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6YJ4aRzYNGS6ZB9/2jQ0Z9Z+0Z45NI+7Aqq3phOIY5cxS2JR47RrD8nns"
+            crossorigin="anonymous"></script>
+</body>
+</html>

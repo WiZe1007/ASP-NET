@@ -1,0 +1,74 @@
+body {
+    background: url('https://images7.alphacoders.com/116/1162515.jpg') center/cover fixed no-repeat;
+}
+
+.form-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 480px;
+    width: 100%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+    .form-card h2 {
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+    }
+
+.form-material .form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+    .form-material .form-control:focus {
+        outline: none;
+        border-bottom-color: #1abc9c;
+    }
+
+.form-material label {
+    display: block;
+    color: #888;
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+}
+
+.error-message {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #e74c3c;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    animation: fade-in 0.4s;
+}
+
+.btn-register {
+    width: 30%;
+    background-color: #1abc9c;
+    border: none;
+    padding: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+    .btn-register:hover {
+        background-color: #16a085;
+    }
+
+.list-group-item {
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

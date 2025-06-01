@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Тест: Історія України";
+}
+<div class="form-card animate__animated animate__fadeIn">
+    <h2>@ViewData["Title"]</h2>
+    <p>Натисніть «Почати», щоб розпочати тестування.</p>
+
+    <div class="d-flex justify-content-between">
+        <a asp-controller="Account" asp-action="Profile" class="btn btn-outline-secondary">
+            ← Назад до профілю
+        </a>
+        <a asp-action="Take" class="btn btn-primary">
+            Почати
+        </a>
+    </div>
+</div>

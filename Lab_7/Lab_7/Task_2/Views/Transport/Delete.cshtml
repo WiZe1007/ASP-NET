@@ -1,0 +1,25 @@
+﻿@model Task_2.Models.Transport
+
+@{
+    ViewData["Title"] = "Видалити маршрут";
+}
+
+<div class="details-card">
+    <h2>Видалення маршруту</h2>
+
+    <p>Ви дійсно бажаєте видалити цей маршрут?</p>
+
+    <p><strong>Id:</strong> @Model.Id</p>
+    <p><strong>Вид транспорту:</strong> @Model.VidTransportu</p>
+    <p><strong>Номер маршруту:</strong> @Model.NomMarshruta</p>
+    <p><strong>Протяжність (км):</strong> @Model.ProtjazhnistMarshruta</p>
+    <p><strong>Час в дорозі (хв):</strong> @Model.ChasVDorozi</p>
+    <p><strong>Кількість зупинок:</strong> @Model.KilkistZupynok</p>
+
+    <hr />
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Видалити</button>
+        <a asp-action="Index" class="btn btn-secondary">Назад</a>
+    </form>
+</div>

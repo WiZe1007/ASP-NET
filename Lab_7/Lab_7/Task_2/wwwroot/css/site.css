@@ -1,0 +1,218 @@
+/* 
+  Фон сторінки з анімацією:
+  Використовується зображення, прозорий "overlay", bounce-анімація заголовків і т.д.
+*/
+
+/* Загальний стиль body */
+body {
+    background: url('https://www.hdwallpapers.in/download/usa_vermont_forest_with_house_and_road_between_field_and_trees_under_cloudy_sky_during_fall_hd_nature-1920x1080.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    animation: fadeInBackground 3s ease-in-out;
+}
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Прозорий шар (overlay) */
+.overlay {
+    background-color: rgba(255, 255, 255, 0.2);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Контейнер */
+.container {
+    padding-top: 30px;
+}
+
+/* Заголовки (h1, h2) з bounce-анімацією */
+h1, h2 {
+    color: #333;
+    text-align: center;
+    animation: bounce 2s;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Стиль форми з ефектом появи */
+form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+    margin-bottom: 0;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Плавний перехід для полів форми */
+.form-control {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+    .form-control:focus {
+        border-color: #80bdff;
+        box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+    }
+
+/* Відступи між блоками форми */
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+/* Стилі для кнопок */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+        border-color: #545b62;
+    }
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+    .btn-danger:hover {
+        background-color: #bb2d3b;
+        border-color: #b02a37;
+    }
+
+/* Стиль для кнопки редагування */
+.btn-edit {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: #fff;
+    border-radius: 12px;
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    margin-right: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+    .btn-edit:hover {
+        background-color: #138496;
+        border-color: #117a8b;
+    }
+
+/* Стиль для кнопки видалення запису */
+.btn-delete {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    border-radius: 12px;
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    outline: none;
+    box-shadow: none;
+}
+
+    .btn-delete:hover {
+        background-color: #bb2d3b;
+    }
+
+/* Inline-форма для окремого запису */
+.inline-form {
+    display: inline-block;
+    margin: 0;
+}
+
+/* Стиль таблиці */
+.custom-bordered-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 80%;
+}
+
+    .custom-bordered-table th,
+    .custom-bordered-table td {
+        border: 1px solid #fff !important;
+        padding: 8px;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .custom-bordered-table th {
+        font-weight: bold;
+    }
+
+/* Стиль блоку результату */
+.result {
+    text-align: center;
+}
+
+    .result h2 {
+        color: #fff !important;
+    }
+
+/* Див-картка для деталей */
+.details-card {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    animation: slideIn 1s ease-out;
+    margin-top: 20px;
+}
+
+/* Помилки валідації */
+.text-danger {
+    font-weight: 600;
+    color: red !important; 
+
+}

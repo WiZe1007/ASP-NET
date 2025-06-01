@@ -1,0 +1,30 @@
+[
+  {
+    "Name": "Bogdan",
+    "Email": "nemofresh8@gmail.com",
+    "Phone": "0963945855",
+    "Password": "12458963Eb10@",
+    "Score": 20
+  },
+  {
+    "Name": "NeMo",
+    "Email": "nemofresh10000@gmail.com",
+    "Phone": "0501287045",
+    "Password": "12458963Eb12@",
+    "Score": 60
+  },
+  {
+    "Name": "Test1",
+    "Email": "example10@gmail.com",
+    "Phone": "\u002B380508127488",
+    "Password": "12458963Eb28@",
+    "Score": 40
+  },
+  {
+    "Name": "Test193",
+    "Email": "nemofresh_test10000@gmail.com",
+    "Phone": "0963945857",
+    "Password": "12458963Ebrt@",
+    "Score": 9
+  }
+]

@@ -1,0 +1,45 @@
+﻿@model List<Task_6.Models.TestQuestion>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Manage Questions";
+}
+<div class="form-card animate__animated animate__fadeIn">
+    <h2>Manage Questions</h2>
+    <div class="mb-3">
+        <a asp-controller="Account" asp-action="Profile" class="btn btn-outline-secondary">
+            ← Back to Profile
+        </a>
+        <a asp-action="CreateQuestion" class="btn btn-primary">
+            Create New
+        </a>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th style="width:5%">Id</th>
+                <th style="width:55%">Text</th>
+                <th style="width:5%">Type</th>
+                <th style="width:15%">Correct</th>
+                <th style="width:20%"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var q in Model)
+            {
+                <tr>
+                    <td>@q.Id</td>
+                    <td>@q.Text</td>
+                    <td>@q.QuestionType</td>
+                    <td>@q.CorrectAnswers</td>
+                    <td>
+                        <a asp-action="EditQuestion" asp-route-id="@q.Id" class="btn btn-sm btn-secondary">Edit</a>
+                        <form asp-action="DeleteQuestion" method="post" class="d-inline">
+                            <input type="hidden" name="id" value="@q.Id" />
+                            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

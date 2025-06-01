@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Сторінка 4";
+    // Фон для Стор4
+    ViewBag.BackgroundUrl = "https://images.squarespace-cdn.com/content/v1/5d777de8109c315fd22faf3a/1693407136044-G90XQURX1GABMYGAS8K1/shutterstock_1288634614.jpg?format=2500w";
+}
+
+<div class="container my-5">
+    <h2 class="mb-3">Сторінка 4</h2>
+    <p class="mb-3">Відвідувань: @ViewBag.VisitCount</p>
+    <p>Це Сторінка 4.</p>
+    <!-- За схемою: Стор4 → Стор5 -->
+    <a asp-controller="Page5" asp-action="Index" class="btn btn-primary">Далі</a>
+</div>

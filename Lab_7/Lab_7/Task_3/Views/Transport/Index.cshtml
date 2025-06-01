@@ -1,0 +1,115 @@
+﻿@model Task_3.Models.Transport
+
+@{
+    ViewData["Title"] = "Форма транспорту";
+    var transports = ViewBag.Transports as List<Task_3.Models.Transport>;
+}
+
+<h1>Форма введення даних про транспорт</h1>
+
+<!-- Форма для додавання нового запису -->
+<form asp-action="Index" method="post">
+    <!-- 1) TransportType -->
+    <div class="mb-3">
+        <!-- Помилка валідації над полем -->
+        <span asp-validation-for="TransportType" class="text-danger" style="display:block;"></span>
+        <label asp-for="TransportType" class="form-label">
+            Вид транспорту (Tr, Tl, A)
+        </label>
+        <input asp-for="TransportType" class="form-control" placeholder="Введіть вид транспорту" />
+    </div>
+
+    <!-- 2) RouteNumber -->
+    <div class="mb-3">
+        <!-- Помилка валідації над полем -->
+        <span asp-validation-for="RouteNumber" class="text-danger" style="display:block;"></span>
+        <label asp-for="RouteNumber" class="form-label">
+            Номер маршруту
+        </label>
+        <input asp-for="RouteNumber" class="form-control" placeholder="Введіть номер маршруту" />
+    </div>
+
+    <!-- 3) RouteDistance -->
+    <div class="mb-3">
+        <label asp-for="RouteDistance" class="form-label">
+            Протяжність маршруту (км)
+        </label>
+        <input asp-for="RouteDistance" class="form-control" placeholder="Введіть протяжність" type="number" step="0.01" />
+        <!-- Помилка валідації праворуч -->
+        <span asp-validation-for="RouteDistance" class="text-danger" style="margin-left: 10px;"></span>
+    </div>
+
+    <!-- 4) TravelTime -->
+    <div class="mb-3">
+        <label asp-for="TravelTime" class="form-label">
+            Час в дорозі (хв)
+        </label>
+        <input asp-for="TravelTime" class="form-control" placeholder="Введіть час в дорозі" type="number" />
+        <!-- Помилка валідації праворуч -->
+        <span asp-validation-for="TravelTime" class="text-danger" style="margin-left: 10px;"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Додати до БД</button>
+    <!-- Перезавантаження сторінки для скидання форми -->
+    <button type="button" class="btn btn-secondary"
+            onclick="window.location.href='@Url.Action("Index", "Transport")'">
+        Скинути
+    </button>
+</form>
+
+<!-- Форма для видалення всіх записів -->
+<form asp-action="DeleteAll" method="post" style="margin-top: 15px;">
+    <button type="submit" class="btn btn-danger">Видалити всі записи</button>
+</form>
+
+@if (transports != null && transports.Any())
+{
+        <hr />
+        <div class="result">
+            <h2>Вміст таблиці Transports:</h2>
+            <table class="table custom-bordered-table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Вид транспорту</th>
+                        <th>Номер маршруту</th>
+                        <th>Протяжність (км)</th>
+                        <th>Час в дорозі (хв)</th>
+                        <th>Дії</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in transports)
+                {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.TransportType</td>
+                                <td>@item.RouteNumber</td>
+                                <td>@item.RouteDistance</td>
+                                <td>@item.TravelTime</td>
+                                <td>
+                                    <!-- Перехід до редагування -->
+                                    <a href="@Url.Action("Edit", "Transport", new { id = item.Id })"
+                                       class="btn btn-sm btn-info btn-edit">
+                                        Редагувати
+                                    </a>
+                                    <!-- Видалення -->
+                                    <form asp-action="DeleteRecord" method="post" class="inline-form">
+                                        <input type="hidden" name="id" value="@item.Id" />
+                                        <button type="submit" class="btn-delete">Видалити</button>
+                                    </form>
+                                </td>
+                            </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+}
+else
+{
+        <hr />
+        <div class="result">
+            <h2>Вміст таблиці Transports:</h2>
+            <p>Таблиця порожня.</p>
+        </div>
+}
